@@ -2,6 +2,8 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  basePath: "/pages",
+  assetPrefix: "/pages",
 }
 
 
