@@ -1,0 +1,23 @@
+.main{
+  background-color: rgb(211, 250, 202);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:80vh;
+  width: 100vw;
+  text-align: center;
+  user-select:none;
+}
+
+.itemButton{
+  height: 100%;
+  width:80vw;
+  margin:2px;
+  background-color: #2A7221; 
+  color: white;
+  border-radius: 100px;
+  justify-self:center;
+  align-items:center;
+  
+  
+}

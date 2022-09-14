@@ -1,0 +1,32 @@
+
+.gifDiv{
+  display:inline;
+  justify-content: flex-start;
+  align-self:center;
+  width:60vw;
+  max-height:90vh;
+  opacity:0.9;
+
+}
+.bgImg{
+  z-index:-1;
+  opacity:0.2;
+  pointer-events:none;
+  position:fixed;
+  overflow:hidden;
+}
+
+.projectImage{
+  display:inline;
+  min-height:500px;  
+}
+.projectImageDiv{
+  border: 1px solid rgba(0, 0, 0, 0.172);
+}
+.inlineLogo{
+  max-height:25px;
+  max-width:25px;
+}
+.gif{
+  max-width:5vw;
+}

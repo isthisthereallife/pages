@@ -1,0 +1,74 @@
+:root {
+  --dark_green:#1E441E;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #01438e;
+
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button{
+  border-radius: 100px;
+}
+
+.project-external-link-list{
+  background-color:rgb(96, 175, 100)
+}
+.project-external-link-list a {
+  color: #01438e;
+  text-decoration: none;
+}
+.main{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  justify-content:baseline;
+  text-align: center;
+  user-select:none;
+  min-height: 90vh;
+  min-width:90vw;
+}
+
+.main .startpage_button{
+  height: 20%;
+  margin:2px;
+  background-color: #2A7221; 
+  color: white;
+  border-radius: 10px;
+  text-shadow: rgb(1, 37, 4) 0px 1px 2px;
+}
+
+
+@media (min-width: 700px) {
+  .main{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .startpage_button{
+    justify-self: center;
+    justify-content: center;
+    width: 40vw;
+    max-width: 680px;
+
+    
+  }
+}

@@ -1,0 +1,22 @@
+.main{
+  background-color: cadetblue;
+  display:flex;
+  flex-direction:column;
+  height:80vh;
+  width: 100vw;
+  text-align: center;
+  user-select:none;
+}
+
+.buttonProjs{
+  border: 1px solid teal !important;
+  margin-bottom:2px !important;
+  background-color: aqua !important; 
+  color: red !important;
+}
+.button{
+  border: 1px solid teal !important;
+  margin-bottom:2px !important;
+  background-color: aqua !important; 
+  color: red !important;
+}
