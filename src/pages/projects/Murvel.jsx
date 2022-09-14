@@ -30,10 +30,8 @@ export default function Murvel(){
               className={styles.gif} 
               src={murvelGif} 
               alt="Murvel"
-              layout="responsive"
-              sizes="(max-width: 768px) 100vw,
-                      (max-width: 1200px) 50vw,
-                      33vw"
+              height="420px"
+              width="250px"
               />
             </div>
             <p>All the Marvel info you could possibly want, <br/>in the palm of your hand.
