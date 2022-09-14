@@ -11,10 +11,21 @@ import imgSpring from '../../../public/images/spring.png'
 import imgVue from '../../../public/images/vuejs2.png'
 import { CREEP_EVENTS } from '../../reducers/creepReducer'
 import useCreep from '../../lib/hooks/useCreep'
+import { useEffect } from 'react'
 
 
 export default function GilfoyleGo(){
-  
+  const creep = useCreep();
+  useEffect(()=>{
+  if(creep.creep.currentIndex !== 13){
+    creep.creepDispatch({
+    payload: {
+      currentIndex: 13,
+      currentPageType: "project"
+    },
+    type: CREEP_EVENTS.UPDATE
+  })
+}},[])
   
   return(
     <>

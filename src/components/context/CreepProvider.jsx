@@ -21,7 +21,6 @@ const CreepProvider = ({children}) => {
 }
 
 export async function loadInfo(creep, id){
-  console.log("LADDAR creep: ",creep)
   if (id) {
     let temp = 1;
     temp = id;

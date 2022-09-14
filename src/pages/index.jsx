@@ -18,8 +18,9 @@ import { CREEP_EVENTS } from '../reducers/creepReducer'
 
 function HomePage() {
   const creep = useCreep()
+  const ind = creep.creep.currentIndex
   useEffect(()=>{
-  if(creep.creep.currentIndex !== 0){
+  if(ind!== 0){
     creep.creepDispatch({
     payload: {
       currentIndex: 0,
@@ -28,7 +29,7 @@ function HomePage() {
     type: CREEP_EVENTS.UPDATE
   })
 }},[])
-  
+
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) =>{
@@ -37,12 +38,10 @@ function HomePage() {
     creep.currentIndex=index;
   }
 
-  console.log(imgSvtpk)
   return <>
     <div className={styles.bg}>
   <div className="main">
-    
-    {console.log("creep: ",creep)}
+
     {
       <Carousel className={styles.carouselMain} fade variant="dark" activeIndex={index} onSelect={handleSelect}>
 
@@ -56,12 +55,14 @@ function HomePage() {
               variant="top"
                 alt="Javaapplikation" />
         </Link>
-        <Link href="/projects/SVTpk">
             <Carousel.Caption className={styles.carousel_caption}>
-              <h5>SVTpk</h5>
-              <p>Privatkopiera från SVT Play</p>
+              <Link href="/projects/SVTpk">
+                <div>
+                  <h5>SVTpk</h5>
+                  <p>Privatkopiera från SVT Play</p>
+                </div>
+              </Link>
             </Carousel.Caption>
-        </Link>
           </Carousel.Item>
           <Carousel.Item interval={4000}>
         <Link href="/projects/Pokertimer">
@@ -71,17 +72,19 @@ function HomePage() {
             height="520"
             alt="Pokertimer" />
         </Link>
-        <Link href="/projects/Pokertimer">
             <Carousel.Caption className={styles.carousel_caption_light}>
+        <Link href="/projects/Pokertimer">
+              <div>
               <h5>Pokertimer</h5>
               <p>Håll koll på tiden!</p>
+              </div>
+              </Link>
             </Carousel.Caption>
-            </Link>
           </Carousel.Item>
-          
-          
-          
-        
+
+
+
+
           <Carousel.Item interval={4000}>
         <Link href="/projects/Murvel">
 
@@ -91,13 +94,14 @@ function HomePage() {
             height="520"
             alt="Murvel - Android-app"/>
           </Link>
-        <Link href="/projects/Murvel">
-
-            <Carousel.Caption className={styles.carousel_caption_red}>
-              <h5>Android App</h5>
-              <p>Browse the Marvel Universe</p>
-            </Carousel.Caption>
+          <Carousel.Caption className={styles.carousel_caption_red}>
+            <Link href="/projects/Murvel">
+              <div>
+                <h5>Android App</h5>
+                <p>Browse the Marvel Universe</p>
+              </div>
             </Link>
+            </Carousel.Caption>
           </Carousel.Item>
 
   <Carousel.Item interval={4000}>
@@ -110,13 +114,14 @@ function HomePage() {
             alt="Hotellbokningsapplikation"
             />
           </Link>
-        <Link href="/projects/GilfoyleGo">
-
-            <Carousel.Caption className={styles.carousel_caption}>
-              <h5>Web App</h5>
-              <p>Hotell booking service</p>
-            </Carousel.Caption>
+          <Carousel.Caption className={styles.carousel_caption}>
+            <Link href="/projects/GilfoyleGo">
+              <div>
+                <h5>Web App</h5>
+                <p>Hotell booking service</p>
+              </div>
             </Link>
+            </Carousel.Caption>
           </Carousel.Item>
 
 
@@ -126,7 +131,7 @@ function HomePage() {
     <Link href="/projects"><Button className="startpage_button" variant="text"  startIcon={<FaHouseUser/>} endIcon={<FaHouseUser/>}>
       Projects
       </Button>
-      </Link>    
+      </Link>
     <Link href="/about"><Button className="startpage_button" variant="contained" startIcon={<FaLowVision/>} endIcon={<FaLockOpen/>}>
       About Me
       </Button>
