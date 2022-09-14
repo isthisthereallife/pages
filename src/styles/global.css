@@ -29,13 +29,6 @@ a:hover {
   border-radius: 100px;
 }
 
-.project-external-link-list{
-  background-color:rgb(96, 175, 100)
-}
-.project-external-link-list a {
-  color: #01438e;
-  text-decoration: none;
-}
 .main{
   display:flex;
   flex-direction:column;

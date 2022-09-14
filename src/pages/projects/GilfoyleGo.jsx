@@ -2,7 +2,6 @@ import styles from '../../styles/project.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import imgGilfoyle from '../../../public/images/gilfoyle.png'
-import imgGilfoyle_mobile from '../../../public/images/gilfoyle_mobile.png'
 import imgBootstrap from '../../../public/images/bootstrap.png'
 import imgHtml5 from '../../../public/images/html5.png'
 import imgJava from '../../../public/images/java.png'
@@ -21,11 +20,12 @@ export default function GilfoyleGo(){
     creep.creepDispatch({
     payload: {
       currentIndex: 13,
+      currentPage: "Gilfoyle Go",
       currentPageType: "project"
     },
     type: CREEP_EVENTS.UPDATE
   })
-}},[])
+}},)
   
   return(
     <>
@@ -40,8 +40,6 @@ export default function GilfoyleGo(){
         objectPosition="center"
         />
   */}
-        <h2>Hotel Booking Web-App</h2>
-          <hr />
           <div 
             width="680"
             height="520">
@@ -50,6 +48,8 @@ export default function GilfoyleGo(){
             />
 
           </div>
+          
+        <h3>Hotel Booking Web-App</h3>
             <p>Fully functional application for finding and booking hotel rooms.
             </p>
             <br />
@@ -93,7 +93,7 @@ export default function GilfoyleGo(){
           </Link>
             </div>
             <br />
-            <div className="project-external-link-list">
+            <div className={styles.project_links}>
               <Link href="https://github.com/isthisthereallife/Hotel-Booking-App"> source code</Link>
             </div>
       </div>

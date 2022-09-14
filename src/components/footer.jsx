@@ -1,10 +1,9 @@
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaArrowCircleRight, FaArrowLeft, FaArrowRight, FaLongArrowAltRight, FaRegArrowAltCircleLeft, FaRegArrowAltCircleRight } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import useCreep from '../lib/hooks/useCreep'
 import styles from '../styles/footer.module.css'
 import copyLeft from '../../public/images/Copyleft_white.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import {PAGES} from '../utils/constants/pageNumbers'
 import { useEffect, useState } from 'react'
 
 export default function Footer(){
@@ -12,8 +11,6 @@ export default function Footer(){
   const creep = useCreep()
   const currentPageType = creep.creep.currentPageType
   const currentPageIndex = creep.creep.currentIndex
-  const currentPageUri = creep.creep.currentPageUri
-  let arrowLeftUri, ArrowRightUri = "a"
   const [arrows, setArrows] = useState(false)
 
   useEffect(() => {
@@ -30,11 +27,6 @@ if(currentPageType==="project")setArrows(true)
     else setArrows(false)
   },[currentPageType,currentPageIndex])
   
-
-  function arrowClicked(){
-    //PAGES.SVTPK.uri
-    
-  }
 let left
 let right
 switch (currentPageIndex) {

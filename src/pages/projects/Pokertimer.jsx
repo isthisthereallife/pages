@@ -17,29 +17,29 @@ export default function Pokertimer(){
       creep.creepDispatch({
         payload: {  
           currentIndex: 11,
+          currentPage: "Pokertimer",
           currentPageType: "project"
         },
         type: CREEP_EVENTS.UPDATE
       })
     }
-  },[])
+  },)
   
   return(
     <>
       <div className="main">
         
-        <h2>Pokertimer</h2>
-          <hr />
           <Link href="/projects/Pokertimer/Pokertimer">
           <Image className={styles.projectImage}
           src={imgPoker}
           />
           </Link>
+        <div className={styles.project_links} >
           <Link href="/projects/Pokertimer/Pokertimer">
-        <button variant="success">Starta</button>
-        </Link>
-
-          </div>
+          <button className={styles.playBtn}>Starta</button>
+          </Link>
+        </div>
+      </div>
 
           </>
   )

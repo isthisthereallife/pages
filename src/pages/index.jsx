@@ -11,7 +11,6 @@ import imgGilfoyle from '../../public/images/gilfoyle.png'
 import Carousel from 'react-bootstrap/Carousel'
 import imgPoker from '../../public/images/poker.png'
 import imgMurvel from '../../public/images/murvel2.png'
-import imgStenarWide from '../../public/images/stenar-wide.jpeg'
 import { CREEP_EVENTS } from '../reducers/creepReducer'
 
 
@@ -19,6 +18,7 @@ import { CREEP_EVENTS } from '../reducers/creepReducer'
 function HomePage() {
   const creep = useCreep()
   const ind = creep.creep.currentIndex
+  
   useEffect(()=>{
   if(ind!== 0){
     creep.creepDispatch({
@@ -33,7 +33,6 @@ function HomePage() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) =>{
-    console.log("changed index to ",selectedIndex)
     setIndex(selectedIndex)
     creep.currentIndex=index;
   }

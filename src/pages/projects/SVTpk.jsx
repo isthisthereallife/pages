@@ -15,20 +15,19 @@ export default function SVTpk(){
       creep.creepDispatch({
         payload: {
           currentIndex: 10,
+          currentPage: "SVT pk",
           currentPageType: "project"
         },
         type: CREEP_EVENTS.UPDATE
       })
     }
-  },[])
-  console.log("DE T ÄR JU HÄR cree:p: ",creep.creep.currentIndex)
-
+  },)
   
       
   return (
     <>
       <div className="main">
-        <h2>SVTpk - Privatkopiera från SVT</h2>
+        <h2>Privatkopiera från SVT</h2>
         <div 
             width="680"
             height="520"
@@ -44,13 +43,12 @@ export default function SVTpk(){
         </div>
         <hr />
         <p>Written in <Link href="https://www.java.com"><Image className={styles.inlineLogo} src={imgJava} height="45px" width="45px" /></Link> with JavaFX</p>
-        <div className="project-external-link-list" >Links:
+        <div className={styles.project_links} >
         <br />
         <Link href="https://isthisthereallife.github.io/svtpk/">download</Link>
         <br />
         <Link href="https://github.com/isthisthereallife/svtpk">source code</Link>
         </div>
-        <hr />
       </div>
     </>
   )

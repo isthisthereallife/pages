@@ -3,9 +3,8 @@
   display:inline;
   justify-content: flex-start;
   align-self:center;
-  width:60vw;
-  max-height:90vh;
-  opacity:0.9;
+  width:70vw;
+  max-height:90%;
 
 }
 .bgImg{
@@ -27,6 +26,20 @@
   max-height:25px;
   max-width:25px;
 }
-.gif{
-  max-width:5vw;
+
+.project_links{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(96, 175, 100);
+  width:100%;
+}
+.project_links a {
+  color: #01438e;
+  text-decoration: none;
+}
+.playBtn{
+
+  width:40%;
 }

@@ -3,7 +3,6 @@ import styles from '../styles/about.module.css'
 import Image from 'next/image'
 import img from '../../public/images/ooo.jpeg'
 export default function AboutYou(){
-  const you = useCreep()
   
   return (
     <>
