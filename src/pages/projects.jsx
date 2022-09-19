@@ -59,15 +59,15 @@ export default function Projects(){
           </Link>
           </div>
           
-
+        {/*
           <div className={styles.item}>
           <Link href="/projects/Audioplayer">
             <button className={styles.itemButton}>
-              <h4>Audioplayer | (i wanted to listen to podcasts)</h4>
+              <h4>Audioplayer</h4>
                 </button>
           </Link>
           </div>
-      
+          */}
       </div>
     </>
   )
