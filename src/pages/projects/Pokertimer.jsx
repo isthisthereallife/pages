@@ -23,8 +23,8 @@ export default function Pokertimer(){
         type: CREEP_EVENTS.UPDATE
       })
     }
-  },)
-  
+  },[])
+
   return(
     <>
       <div className="main">

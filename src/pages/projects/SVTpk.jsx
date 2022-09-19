@@ -5,7 +5,7 @@ import imgSvtpk from '../../../public/images/svtpk2.png'
 import imgJava from '../../../public/images/java.png'
 import useCreep from '../../lib/hooks/useCreep'
 import { CREEP_EVENTS } from '../../reducers/creepReducer'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 export default function SVTpk(){
   const creep = useCreep()
@@ -34,6 +34,7 @@ export default function SVTpk(){
             className={styles.projectImageDiv}>
         <Image className={styles.projectImage}
           src={imgSvtpk}
+          alt="Screen capture from the program SVTpk"
           />
           </div>
         <h5>Portable application. Grapical User Interface.</h5>
@@ -41,8 +42,10 @@ export default function SVTpk(){
         <br />
         Enables downloads from SVT Play.
         </div>
-        <hr />
-        <p>Written in <Link href="https://www.java.com"><Image className={styles.inlineLogo} src={imgJava} height="45px" width="45px" /></Link> with JavaFX</p>
+        <div>Written in 
+          <Link href="https://www.java.com">
+            <Image className={styles.inlineLogo} src={imgJava} height="45px" width="45px" alt="Java logo"/>
+            </Link> with JavaFX</div>
         <div className={styles.project_links} >
         <br />
         <Link href="https://isthisthereallife.github.io/svtpk/">download</Link>

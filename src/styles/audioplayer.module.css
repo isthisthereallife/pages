@@ -1,0 +1,244 @@
+.main{
+  box-sizing:border-box;
+  font-family: 'Righteous', cursive;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+.infoHeader{
+  flex-grow:1;
+  width:100vw;
+  height:5vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: rgb(243, 124, 44);
+  border-bottom-width: 100vw;
+  border-bottom:10px ridge rgba(134, 41, 4, 0.911);
+}
+.infoHeader>section:first-child{
+  width:5%;
+  margin-left:1vw;
+  text-align:left;
+}
+.infoHeader>section:nth-child(2){
+  text-align:center;
+  width:90%;
+  font-size:2.5vh;
+}
+.infoHeader>section:last-child{
+  width:5%;
+  text-align:right;
+  margin-right:1vw;
+}
+.headerButton{
+  padding:1px;
+  margin:1px;
+  font-size:2.5vh;
+}
+
+.main{ /*som .content i scenerylektionen*/
+  display:flex;
+  flex-grow:1;
+  /* height:95vh; */
+  min-width:100vw;
+  flex-direction:row; /*just for clarity. det är redan default*/
+  justify-content:center;
+}
+.view{ /*som column i scenerylektionen*/
+  flex-grow:1;
+  min-height:95vh;
+  display:flex;
+  flex-direction:column;
+}
+.rightView{
+  flex-grow:1;
+  background-color:rgb(243, 83, 35);
+  border-left:2px solid rgba(134, 41, 4, 0.911);
+
+}
+
+
+#player{
+  flex-grow:1;
+  width:50%;
+  /* min-width:50%;
+  min-height:95%; */
+
+}
+#topRight{
+  display:flex;
+  flex-grow:3;
+  justify-content:center;
+  align-items:center;
+}
+#coverArt{
+  width:40vw;
+  display:block;
+  padding:15px;
+  border-radius:5vw;
+}
+
+#infoBox{
+  background-color:rgb(243, 95, 37);
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  flex-grow:1;
+}
+#songInfoText{
+  font-size:2.5vw;
+  width:70%;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+#songInfo{
+  text-align:center;
+  font-size:2.5vw;
+}
+#artistInfo{
+  text-align:center;
+  font-size:2.3vw;
+}
+#plusButton{
+  text-align:left;
+  width:15%;
+  font-size:4vw;
+  margin-left:15px;
+}
+#heartButton{
+  text-align:right;
+  width:15%;
+  font-size:4vw;
+  margin-right:15px;
+}
+#progressBox{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  align-content:center;
+  flex-grow:1;
+  background-color:rgb(243, 100, 37);
+}
+
+#progressBar {
+  background-color:rgb(218, 83, 35);
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 20%;
+  border-radius: 50px;
+  margin: 0 5%;
+}
+
+#bar {
+  background-color: black;
+  color:rgba(32, 32, 32, 0);
+  width: 0%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+#timestampLeft{
+  text-align:left;
+  width:20%;
+  margin-left:15px;
+  font-size:2.3vw;
+  overflow:visible;
+}
+#timestampRight{
+  text-align:right;
+  width:20%;
+  margin-right:15px;
+  font-size:2.3vw;
+  overflow:visible;
+  
+}
+#playbackOptionsBox{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-grow:1;
+  background-color:rgb(243, 124, 44);
+}
+
+#repeat{
+  font-size:4vw;
+  margin-left: 2vw;
+}
+#backward{
+  font-size:5vw;
+}
+#playerPause{
+  font-size:6vw;
+}
+#playerPlay{
+  font-size:6vw;
+}
+#forward{
+  font-size:5vw;
+}
+#shuffle{
+  font-size:4vw;
+  margin-right: 2vw;
+}
+
+
+#playlist{
+  display:flex;
+  min-width:50%;
+  min-height:95%;
+  background-color:rgb(218, 83, 35);
+  flex-direction:column;
+}
+
+.queueItem{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  height:10vw;
+  border-bottom:1px dashed rgba(134, 41, 4, 0.911);
+  
+}
+
+.queueCoverArt{
+  justify-content:left;
+  margin-left:3vw;
+  width:20%;
+  
+}
+.queueImg{
+  width:9vw;
+  border-radius:10px;
+  
+}
+.queueSongInfo{
+  margin:3px;
+  font-size:2.5vw;
+  justify-content:left;
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  width:60%;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  
+  
+}
+.songName{
+  font-size:90%;
+}
+.artistName{
+  font-size:110%;
+}
+.queuePlayButton{
+  text-align:right;
+  font-size:3vw;
+  margin-right:3vw;
+  width:20%;
+}

@@ -3,21 +3,32 @@
   display:flex;
   flex-direction:column;
   align-items:center;
+  
   height:80vh;
   width: 100vw;
   text-align: center;
   user-select:none;
 }
 
+.item{
+  height:16vh;
+}
+
+.item:nth-child(even){
+  height:12vh;
+}
+.item:nth-child(even) .itemButton{
+  
+  background-color: #123e0c;
+}
 .itemButton{
   height: 100%;
   width:80vw;
   margin:2px;
   background-color: #2A7221; 
   color: white;
-  border-radius: 100px;
+  border-radius: 33px;
   justify-self:center;
   align-items:center;
-  
   
 }

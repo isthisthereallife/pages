@@ -41,5 +41,6 @@
 }
 .playBtn{
 
+  cursor:pointer;
   width:40%;
 }

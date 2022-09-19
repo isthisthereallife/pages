@@ -44,7 +44,7 @@ function HomePage() {
     {
       <Carousel className={styles.carouselMain} fade variant="dark" activeIndex={index} onSelect={handleSelect}>
 
-          <Carousel.Item interval={4000} >
+          <Carousel.Item interval={2500} >
           <Link href="/projects/SVTpk">
             <Image
               className={styles.carousel_image}
@@ -52,7 +52,7 @@ function HomePage() {
               height="520"
               src={imgSvtpk}
               variant="top"
-                alt="Javaapplikation" />
+              alt="Javaapplikation" />
         </Link>
             <Carousel.Caption className={styles.carousel_caption}>
               <Link href="/projects/SVTpk">
@@ -63,7 +63,7 @@ function HomePage() {
               </Link>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={4000}>
+          <Carousel.Item interval={2500}>
         <Link href="/projects/Pokertimer">
             <Image className={styles.carousel_image}
             src={imgPoker}
@@ -84,7 +84,7 @@ function HomePage() {
 
 
 
-          <Carousel.Item interval={4000}>
+          <Carousel.Item interval={2500}>
         <Link href="/projects/Murvel">
 
             <Image className={styles.carousel_image}
@@ -103,7 +103,7 @@ function HomePage() {
             </Carousel.Caption>
           </Carousel.Item>
 
-  <Carousel.Item interval={4000}>
+  <Carousel.Item interval={2500}>
         <Link href="/projects/GilfoyleGo">
 
             <Image className={styles.carousel_image}
@@ -127,7 +127,7 @@ function HomePage() {
 
       </Carousel>
 }
-    <Link href="/projects"><Button className="startpage_button" variant="text"  startIcon={<FaHouseUser/>} endIcon={<FaHouseUser/>}>
+    <Link href="/projects"><Button className="startpage_button" variant="contained"  startIcon={<FaHouseUser/>} endIcon={<FaHouseUser/>}>
       Projects
       </Button>
       </Link>

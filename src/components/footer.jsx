@@ -30,17 +30,17 @@ if(currentPageType==="project")setArrows(true)
 let left
 let right
 switch (currentPageIndex) {
-          case 10:  left = <Link href="/projects/GilfoyleGo"><FaArrowLeft className={styles.icon} /></Link>
-                    right =<Link href="/projects/Pokertimer"><FaArrowRight className={styles.icon}/></Link> 
+          case 10:  left = <Link  href="/projects/GilfoyleGo"><FaArrowLeft className={styles.icon} /></Link>
+                    right =<Link  href="/projects/Pokertimer"><FaArrowRight className={styles.icon}/></Link> 
                     break;
-          case 11:  left = <Link href="/projects/SVTpk"><FaArrowLeft className={styles.icon}/></Link>
-                    right = <Link href="/projects/Murvel"><FaArrowRight className={styles.icon}/></Link>
+          case 11:  left = <Link  href="/projects/SVTpk"><FaArrowLeft className={styles.icon}/></Link>
+                    right = <Link  href="/projects/Murvel"><FaArrowRight className={styles.icon}/></Link>
                     break;
-          case 12:  left = <Link href="/projects/Pokertimer"><FaArrowLeft className={styles.icon}/></Link>
-                    right = <Link href="/projects/GilfoyleGo"><FaArrowRight className={styles.icon}/></Link>
+          case 12:  left = <Link  href="/projects/Pokertimer"><FaArrowLeft className={styles.icon}/></Link>
+                    right = <Link  href="/projects/GilfoyleGo"><FaArrowRight className={styles.icon}/></Link>
                     break;
-          case 13:  left = <Link href="/projects/Murvel"><FaArrowLeft className={styles.icon}/></Link>
-                    right = <Link href="/projects/SVTpk"><FaArrowRight className={styles.icon}/></Link>
+          case 13:  left = <Link  href="/projects/Murvel"><FaArrowLeft className={styles.icon}/></Link>
+                    right = <Link  href="/projects/SVTpk"><FaArrowRight className={styles.icon}/></Link>
                     break;
           default:  
                     break;
@@ -54,9 +54,10 @@ switch (currentPageIndex) {
         
         
         <>    
-        {left}
-        <Link href="/projects"><h3>Projects</h3></Link>
-        {right}
+        {<div className={styles.link}>{left}</div>}
+        <div className={styles.link}><Link href="/projects"><h3>Projects</h3></Link></div>
+        {<div className={styles.link}>{right}</div>}
+
         </>
         
         

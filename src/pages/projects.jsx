@@ -9,11 +9,13 @@ import { useEffect } from 'react'
 
 export default function Projects(){
   const creep = useCreep()
+
   useEffect(() => {
     if(creep.creep.currentIndex !== 2){
       creep.creepDispatch({
         payload: {
-          currentIndex: 5,
+          currentIndex: 2,
+          currentPage: "Projects",
           currentPageType: "list"
         },
         type: CREEP_EVENTS.UPDATE
@@ -26,7 +28,7 @@ export default function Projects(){
       <div className="main">
 
         <div className={styles.item}>
-          <Link href="/projects/SVTpk">
+          <Link href="/projects/SVTpk" >
             <button className={styles.itemButton}>
               <h4>SVTpk | Privatkopiera från SVT</h4>
             </button>
@@ -53,6 +55,15 @@ export default function Projects(){
           <Link href="/projects/GilfoyleGo">
             <button className={styles.itemButton}>
               <h4>Hotel booking | Web-App</h4>
+                </button>
+          </Link>
+          </div>
+          
+
+          <div className={styles.item}>
+          <Link href="/projects/Audioplayer">
+            <button className={styles.itemButton}>
+              <h4>Audioplayer | (i wanted to listen to podcasts)</h4>
                 </button>
           </Link>
           </div>

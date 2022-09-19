@@ -6,7 +6,7 @@ export default function AboutYou(){
   
   return (
     <>
-      <div className={styles.main}>
+      <div className="main">
       <Image src={img} />
       </div>
     </>
