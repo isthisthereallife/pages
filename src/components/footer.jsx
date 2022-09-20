@@ -40,6 +40,9 @@ switch (currentPageIndex) {
                     right = <Link  href="/projects/GilfoyleGo"><FaArrowRight className={styles.icon}/></Link>
                     break;
           case 13:  left = <Link  href="/projects/Murvel"><FaArrowLeft className={styles.icon}/></Link>
+                    right = <Link  href="/projects/Audioplayer"><FaArrowRight className={styles.icon}/></Link>
+                    break;
+          case 14:  left = <Link  href="/projects/GilfoyleGo"><FaArrowLeft className={styles.icon}/></Link>
                     right = <Link  href="/projects/SVTpk"><FaArrowRight className={styles.icon}/></Link>
                     break;
           default:  

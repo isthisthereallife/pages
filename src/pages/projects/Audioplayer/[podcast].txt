@@ -1,0 +1,61 @@
+import styles from '../../../styles/project.module.css'
+import PropTypes from "prop-types"
+import {DOMParser} from 'xmldom'
+
+Podcast.propTypes = {
+  podcast: PropTypes.array
+}
+
+export default function Podcast({podcast}) {
+//const episodeStorage = useEpisodeStorage()
+
+  if (!podcast){
+    return (<>i am Error</>)
+  }
+  return(
+    <>
+      <div className={styles.main}>
+
+
+
+        </div>
+    </>
+  )
+}
+
+export async function getStaticPaths(){
+  //tar emot en lista i form av t ex json
+  const paths = await fetch('https://feeds.soundcloud.com/users/soundcloud:users:623538255/sounds.rss')
+  .then(res => {console.log(res.body);
+                res.text()
+  })
+  .then(res => new DOMParser().parseFromString(res,"application/rss+xml"))
+  .then(res =>{
+    console.log(res)
+
+
+  const d2 = new DOMParser()
+  const d3 = d2.parseFromString(res,"text/xml")
+  console.log(d3+"\n\nEFTER")
+  const routes = [1]//d3.body.querySelectorAll("item")
+  console.log("bara paths:"+routes)
+  return routes
+})
+
+return {
+  fallback: true,
+  paths
+}
+
+}
+
+/**
+ * @params = url to xml
+ * 
+ */
+export async function getStaticProps({ params}) {
+  const res = await fetch(new URL(params))
+  const data = await res.json()
+
+  return { props: { podcast1: data}}
+}

@@ -11,6 +11,8 @@ import imgGilfoyle from '../../public/images/gilfoyle.png'
 import Carousel from 'react-bootstrap/Carousel'
 import imgPoker from '../../public/images/poker.png'
 import imgMurvel from '../../public/images/murvel2.png'
+import imageAudioplayer from '../../public/images/audioplayer.png'
+
 import { CREEP_EVENTS } from '../reducers/creepReducer'
 
 
@@ -44,7 +46,7 @@ function HomePage() {
     {
       <Carousel className={styles.carouselMain} fade variant="dark" activeIndex={index} onSelect={handleSelect}>
 
-          <Carousel.Item interval={2500} >
+          <Carousel.Item interval={3000} >
           <Link href="/projects/SVTpk">
             <Image
               className={styles.carousel_image}
@@ -123,6 +125,26 @@ function HomePage() {
             </Carousel.Caption>
           </Carousel.Item>
 
+      
+  <Carousel.Item interval={2500}>
+        <Link href="/projects/Audioplayer">
+
+            <Image className={styles.carousel_image}
+            src={imageAudioplayer}
+            width="680"
+            height="520"
+            alt="Audio player made with jQuery"
+            />
+          </Link>
+          <Carousel.Caption className={styles.carousel_caption_light}>
+            <Link href="/projects/Audioplayer">
+              <div>
+                <h5>Audio player</h5>
+                <p>Made with jQuery</p>
+              </div>
+            </Link>
+            </Carousel.Caption>
+          </Carousel.Item>
 
 
       </Carousel>

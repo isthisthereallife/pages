@@ -1,8 +1,13 @@
 import $ from 'jquery'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useState } from 'react'
 import { FaBackward, FaChevronLeft, FaEllipsisV, FaForward, FaGratipay, FaPauseCircle, FaPlayCircle, FaPlusSquare, FaRandom, FaRetweet } from 'react-icons/fa'
 import styles from '../../styles/audioplayer.module.css'
-export default function Audioplayer(){
+
+export default function Audioplayer(data){
+const [episodes, setEpisodes] = useState(data)
+
 let songNr = 1
 let queueSize
 let player = {} // new Audio()
@@ -300,6 +305,22 @@ return( <>
         <section className={styles.view} id="playlist">
             
 
+            {episodes &&
+            episodes.map((episode) => (
+                <>
+            <article className={styles.queueItem}>
+            <Link key={episode.id} href={`/Audioplayer/${episode.id.toString()}`}>
+            <div key={episode.id} classname={styles.card}>
+                <Image 
+                />
+            <p className={styles.sssss}>episode: {episode.name}</p>
+            <p className={styles.sssss}>id: {episode.id}</p>
+            
+            </div>
+            </Link>
+            </article>
+            </>
+            ))}
 
 
             <article className={styles.queueItem}songNr="1" link="https://archive.org/download/78_were-you-foolin_johnny-green-and-his-orchestra-johnny-green-allan-curtis-leslie-a_gbia0150380a/_78_were-you-foolin_johnny-green-and-his-orchestra-johnny-green-allan-curtis-leslie-a_gbia0150380a_01_3.5_ET_EQ.mp3">
@@ -416,4 +437,10 @@ return( <>
   </>
 
 )
+}
+
+export async function getStaticProps(){
+    const data = JSON.stringify("item", "jaaaa!! ett item")
+    
+    return {props: {data} }
 }

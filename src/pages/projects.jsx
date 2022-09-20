@@ -59,6 +59,14 @@ export default function Projects(){
           </Link>
           </div>
           
+          <div className={styles.item}>
+          <Link href="/projects/Audioplayer">
+            <button className={styles.itemButton}>
+              <h4>Audioplayer | jQuery</h4>
+                </button>
+          </Link>
+          </div>
+          
         {/*
           <div className={styles.item}>
           <Link href="/projects/Audioplayer">

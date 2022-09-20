@@ -9,5 +9,6 @@ export const PAGES = Object.freeze({
   POKERTIMER: {name: "pokertimer",uri:"/projects/Pokertimer", id:11},
   MURVEL: {name: "murvel", uri: "/projects/Murvel",id:12},
   GILFOYLE: {name: "gilfoyle", uri:"/projects/GilfoyleGo",id:13},
+  AUDIOPLAYER: {name: "audioplayer", uri:"/projects/Audioplayer",id:14},
 
 })
