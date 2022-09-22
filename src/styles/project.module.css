@@ -45,3 +45,13 @@
   cursor:pointer;
   width:40%;
 }
+
+@media (min-width: 700px) {
+    
+.projectImageDiv{
+  max-height:40vh;  
+}
+.projectImage{
+  max-height:40vh;
+}
+}

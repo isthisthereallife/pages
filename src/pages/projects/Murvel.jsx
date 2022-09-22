@@ -28,7 +28,7 @@ export default function Murvel(){
   return (
     <>
       <div className="main">
-            
+            <div className={styles.projectImageDiv}>
             <div className={styles.gifDiv}>
               <Image className={styles.gif}
               src={murvelImg}
@@ -46,11 +46,10 @@ export default function Murvel(){
               width="0"
               onLoad={()=>{
                 if(document.getElementById("murvelImg"))
-                document.getElementById("murvelImg").replaceWith(document.getElementById("murvelGif"))
-
-              
-            }}
+                document.getElementById("murvelImg").replaceWith(document.getElementById("murvelGif"))}
+             }
               />
+            </div>
             </div>
             <div className={styles.infoText}>All the Marvel info you could possibly want, <br/>in the palm of your hand.
             <p>Made for Android devices.</p>

@@ -40,13 +40,15 @@ export default function GilfoyleGo(){
         objectPosition="center"
         />
   */}
-          <div 
-            width="680"
-            height="520">
-            <Image className={styles.projectImage}
-            src={imgGilfoyle}
-            />
+          <div className={styles.projectImageDiv}>
+            <div 
+              width="680"
+              height="520">
+              <Image className={styles.projectImage}
+              src={imgGilfoyle}
+              />
 
+            </div>
           </div>
           
         <h3>Hotel Booking Web-App</h3>

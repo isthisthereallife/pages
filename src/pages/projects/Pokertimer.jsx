@@ -28,6 +28,7 @@ export default function Pokertimer(){
   return(
     <>
       <div className="main">
+        <div classname={styles.projectImageDiv}>
         
           <Link href="/projects/Pokertimer/Pokertimer">
           <Image className={styles.projectImage}
@@ -38,6 +39,7 @@ export default function Pokertimer(){
           <Link href="/projects/Pokertimer/Pokertimer">
           <button className={styles.playBtn}>Starta</button>
           </Link>
+        </div>
         </div>
       </div>
 
