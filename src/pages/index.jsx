@@ -41,7 +41,6 @@ function HomePage() {
 
   return <>
   <div className="main">
-  <div className={styles.bg}>
 
     {
       <Carousel className={styles.carouselMain} pause={false} fade variant="dark" activeIndex={index} onSelect={handleSelect}>
@@ -158,7 +157,6 @@ function HomePage() {
       </Button>
       </Link>
       </div>
-    </div>
     </>
 }
 export default HomePage

@@ -137,6 +137,7 @@
 
 #utfyllnad{
   background-image: url(../../public/images/java.png);
+  
 }
 }
 /* Big thing with no touch */
@@ -172,7 +173,7 @@
 @media(hover:hover){
 
 .itemButton{
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.722);
 }
 
 .item:nth-child(even) .itemButton{
@@ -184,12 +185,14 @@
 .item:hover{
   color:black;
 }
-.itemButton:hover{
-opacity:0.7;
+#btnSvtpk:hover *{
+
+background-color:rgba(255, 255, 255, 0.505);
+padding:5px;
 }
 .itemButton:hover .title{
   color:black;
-  opacity:23;
+  opacity:1;
 }
 .item:nth-child(even) .itemButton:hover{
   

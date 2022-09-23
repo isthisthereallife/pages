@@ -88,7 +88,6 @@ export default function Projects(){
             </div>
             <div className={styles.item}>
               <button className={styles.itemButton} id={styles.utfyllnad}>
-                <h4 className={styles.title} > Utfyllnadsruta | =]</h4>
               </button>
             </div>
           </div>
