@@ -40,14 +40,14 @@ function HomePage() {
   }
 
   return <>
-    <div className={styles.bg}>
   <div className="main">
+  <div className={styles.bg}>
 
     {
-      <Carousel className={styles.carouselMain} fade variant="dark" activeIndex={index} onSelect={handleSelect}>
+      <Carousel className={styles.carouselMain} pause={false} fade variant="dark" activeIndex={index} onSelect={handleSelect}>
 
           <Carousel.Item interval={3000} >
-          <Link href="/projects/SVTpk">
+          <Link href="/projects/SVTpk" className={styles.carousel_link}>
             <Image
               className={styles.carousel_image}
               width="680"
@@ -57,7 +57,7 @@ function HomePage() {
               alt="Javaapplikation" />
         </Link>
             <Carousel.Caption className={styles.carousel_caption}>
-              <Link href="/projects/SVTpk">
+              <Link href="/projects/SVTpk" className={styles.carousel_link}>
                 <div>
                   <h5>SVTpk</h5>
                   <p>Privatkopiera från SVT Play</p>
@@ -66,7 +66,7 @@ function HomePage() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={2500}>
-        <Link href="/projects/Pokertimer">
+        <Link href="/projects/Pokertimer" className={styles.carousel_link}>
             <Image className={styles.carousel_image}
             src={imgPoker}
             width="680"
@@ -74,7 +74,7 @@ function HomePage() {
             alt="Pokertimer" />
         </Link>
             <Carousel.Caption className={styles.carousel_caption_light}>
-        <Link href="/projects/Pokertimer">
+        <Link href="/projects/Pokertimer" className={styles.carousel_link}>
               <div>
               <h5>Pokertimer</h5>
               <p>Håll koll på tiden!</p>
@@ -87,7 +87,7 @@ function HomePage() {
 
 
           <Carousel.Item interval={2500}>
-        <Link href="/projects/Murvel">
+        <Link href="/projects/Murvel" className={styles.carousel_link}>
 
             <Image className={styles.carousel_image}
             src={imgMurvel}
@@ -96,7 +96,7 @@ function HomePage() {
             alt="Murvel - Android-app"/>
           </Link>
           <Carousel.Caption className={styles.carousel_caption_red}>
-            <Link href="/projects/Murvel">
+            <Link href="/projects/Murvel" className={styles.carousel_link}>
               <div>
                 <h5>Android App</h5>
                 <p>Browse the Marvel Universe</p>
@@ -106,7 +106,7 @@ function HomePage() {
           </Carousel.Item>
 
   <Carousel.Item interval={2500}>
-        <Link href="/projects/GilfoyleGo">
+        <Link href="/projects/GilfoyleGo" className={styles.carousel_link}>
 
             <Image className={styles.carousel_image}
             src={imgGilfoyle}
@@ -116,7 +116,7 @@ function HomePage() {
             />
           </Link>
           <Carousel.Caption className={styles.carousel_caption}>
-            <Link href="/projects/GilfoyleGo">
+            <Link href="/projects/GilfoyleGo" className={styles.carousel_link}>
               <div>
                 <h5>Web App</h5>
                 <p>Hotell booking service</p>
@@ -127,7 +127,7 @@ function HomePage() {
 
       
   <Carousel.Item interval={2500}>
-        <Link href="/projects/Audioplayer">
+        <Link href="/projects/Audioplayer" className={styles.carousel_link}>
 
             <Image className={styles.carousel_image}
             src={imageAudioplayer}
@@ -137,7 +137,7 @@ function HomePage() {
             />
           </Link>
           <Carousel.Caption className={styles.carousel_caption_light}>
-            <Link href="/projects/Audioplayer">
+            <Link href="/projects/Audioplayer" className={styles.carousel_link}>
               <div>
                 <h5>Audio player</h5>
                 <p>Made with jQuery</p>

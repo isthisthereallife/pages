@@ -50,7 +50,7 @@ export default function GilfoyleGo(){
 
             </div>
           </div>
-          
+          <div className={styles.infoText} id={styles.gilfoyleInfo}>
         <h3>Hotel Booking Web-App</h3>
             <p>Fully functional application for finding and booking hotel rooms.
             </p>
@@ -94,6 +94,7 @@ export default function GilfoyleGo(){
           />
           </Link>
             </div>
+          </div>
             <br />
             <div className={styles.project_links}>
               <Link href="https://github.com/isthisthereallife/Hotel-Booking-App"> source code</Link>

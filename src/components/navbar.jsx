@@ -3,6 +3,7 @@ import {React} from 'react'
 import useCreep from '../lib/hooks/useCreep'
 import styles from '../styles/navbar.module.css'
 
+
 export default function Navbar(){
   let pageTitle = "isthisthereallife"
 
@@ -21,9 +22,8 @@ export default function Navbar(){
   <>
     <Link href="/">
       <div className={styles.navbar}>
-      <h1>{pageTitle}</h1>
-      </div>
+        <h1>{pageTitle}</h1>
+      </div>  
     </Link>
-    
   </>
 )}

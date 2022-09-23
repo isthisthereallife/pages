@@ -139,7 +139,7 @@
   background-image: url(../../public/images/java.png);
 }
 }
-/* Desktop small */
+/* Big thing with no touch */
 @media (min-width:700px) and (hover:none){
   .title{
     color:black;

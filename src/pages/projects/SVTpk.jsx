@@ -27,7 +27,7 @@ export default function SVTpk(){
   return (
     <>
       <div className="main">
-        <h2>Privatkopiera från SVT</h2>
+        <h2 className={styles.title}>Privatkopiera från SVT</h2>
         <div 
             width="680"
             height="520"
@@ -37,6 +37,8 @@ export default function SVTpk(){
           alt="Screen capture from the program SVTpk"
           />
           </div>
+          <div className={styles.infoText} id={styles.gilfoyleInfo}>
+
         <h5>Portable application. Grapical User Interface.</h5>
         <div>A standalone Java application.
         <br />
@@ -51,6 +53,7 @@ export default function SVTpk(){
         <Link href="https://isthisthereallife.github.io/svtpk/">download</Link>
         <br />
         <Link href="https://github.com/isthisthereallife/svtpk">source code</Link>
+        </div>
         </div>
       </div>
     </>

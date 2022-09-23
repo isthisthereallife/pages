@@ -36,9 +36,10 @@ export default function Audioplayer(){
            <button>Testa</button>
            </div>
            </Link>
-
+           <div className={styles.infoText} id={styles.audioplayerInfo}>
+        
         Basic audio player made with jQuery
-
+        </div>
       </div>
     </>
   )

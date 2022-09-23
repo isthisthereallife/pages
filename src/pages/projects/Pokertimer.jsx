@@ -28,19 +28,16 @@ export default function Pokertimer(){
   return(
     <>
       <div className="main">
-        <div classname={styles.projectImageDiv}>
-        
-          <Link href="/projects/Pokertimer/Pokertimer">
-          <Image className={styles.projectImage}
-          src={imgPoker}
-          />
-          </Link>
-        <div className={styles.project_links} >
-          <Link href="/projects/Pokertimer/Pokertimer">
-          <button className={styles.playBtn}>Starta</button>
-          </Link>
-        </div>
-        </div>
+            <Link href="/projects/Pokertimer/Pokertimer">
+              <Image className={styles.projectImage}
+              src={imgPoker}
+              />
+            </Link>
+            <div className={styles.project_links} >
+              <Link href="/projects/Pokertimer/Pokertimer">
+              <button className={styles.playBtn}>Starta</button>
+            </Link>
+            </div>
       </div>
 
           </>
