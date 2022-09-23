@@ -1,219 +1,209 @@
-.main{
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  
-  min-height:90vh;
+
+  min-height: 90vh;
   min-width: 100vw;
   text-align: center;
   user-select: none;
 }
 
-#btnSvtpk{
-  background-image: url(../../public/images/svtpk.png)
+#btnSvtpk {
+  background-image: url(../../public/images/svtpk.png);
 }
-#btnPoker{
-  background-image: url(../../public/images/poker.png)
+#btnPoker {
+  background-image: url(../../public/images/poker.png);
 }
-#btnMurvel{
-  background-image: url(../../public/images/murvel.png)
+#btnMurvel {
+  background-image: url(../../public/images/murvel.png);
 }
-#btnGilf{
-  background-image: url(../../public/images/gilfoyle.png)
+#btnGilf {
+  background-image: url(../../public/images/gilfoyle.png);
 }
-#btnAudioplayer{
-  background-image: url(../../public/images/audioplayer.png)
+#btnAudioplayer {
+  background-image: url(../../public/images/audioplayer.png);
 }
 
-#utfyllnad{
+#utfyllnad {
   background-image: url(../../public/images/java.png);
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-
-.itemButton{
+.itemButton {
   height: 100%;
-  width:80vw;
-  margin:2px;
-  background-color: #2A7221; 
+  width: 80vw;
+  margin: 2px;
+  background-color: #2a7221;
   color: white;
   border-radius: 33px;
-  justify-self:center;
-  align-items:center;
-
-  
+  justify-self: center;
+  align-items: center;
 }
-.item:nth-child(even) .itemButton{
-  
+
+.item:nth-child(even) .itemButton {
   background-color: #123e0c;
-} 
+}
 
 /* Mobile phones */
-@media (max-width:699px){  
-  .item{
-    height:200px;
+@media (max-width: 699px) {
+  .item {
+    height: 200px;
   }
-  .itemButton{
+  .itemButton {
     background-size: cover;
-    color:black;
-    display:flex;
+    color: black;
+    display: flex;
     justify-content: center;
-    border:1px solid black;
-  
+    border: 1px solid black;
   }
-  .titleCard{
-    height:auto;
-    width:140px;
+  .titleCard {
+    height: auto;
+    width: 140px;
     background-color: white;
-    opacity:0.7;
-    border-radius:30px;
-}
+    opacity: 0.7;
+    border-radius: 30px;
+  }
 }
 
-/* Tablets */
-@media (min-width:700px){
-  .main{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+/* Tablets -------------------------------------------------------------------*/
+@media (min-width: 700px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    
-    min-height:85%;
+
+    min-height: 85%;
     min-width: 100%;
     text-align: center;
-    user-select:none;
+    user-select: none;
   }
 
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .itemButton {
+    width: 300px;
+    height: 300px;
 
-.buttonContainer{
-  display:flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  
-}
-.itemButton{
-  width:300px;
-  height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  display:flex;
-  justify-content: center;
-  align-items: center;
+    background-color: #2a7221;
+    color: white;
+    border-radius: 33px;
 
-  
-  background-color: #2A7221; 
-  color: white;
-  border-radius: 33px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.itemButton .title{
-  font-size: 2em;
-  
-}
-
-
-#btnSvtpk{
-  background-image: url(../../public/images/svtpk.png)
-}
-#btnPoker{
-  background-image: url(../../public/images/poker.png)
-}
-#btnMurvel{
-  background-image: url(../../public/images/murvel.png)
-}
-#btnGilf{
-  background-image: url(../../public/images/gilfoyle.png)
-}
-#btnAudioplayer{
-  background-image: url(../../public/images/audioplayer.png)
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .itemButton .title {
+    font-size: 2em;
+  }
+  #btnSvtpk {
+    background-image: url(../../public/images/svtpk.png);
+  }
+  #btnPoker {
+    background-image: url(../../public/images/poker.png);
+  }
+  #btnMurvel {
+    background-image: url(../../public/images/murvel.png);
+  }
+  #btnGilf {
+    background-image: url(../../public/images/gilfoyle.png);
+  }
+  #btnAudioplayer {
+    background-image: url(../../public/images/audioplayer.png);
+  }
+  #utfyllnad {
+    background-image: url(../../public/images/java.png);
+  }
 }
 
-#utfyllnad{
-  background-image: url(../../public/images/java.png);
-  
-}
-}
-/* Big thing with no touch */
-@media (min-width:700px) and (hover:none){
-  .title{
-    color:black;
+/* Big thing with no touch -------------------------------------------------------*/
+@media (min-width: 700px) and (hover: none) {
+  .title {
+    color: black;
     text-shadow: rgb(255, 255, 255) 0px 1px 2px;
   }
-  .main{
-    min-height:90vh;}
-
+  .main {
+    min-height: 90vh;
+  }
 }
 
 /* Desktop */
-@media (min-width:1000px){
-  .main{
-    min-height:90vh;
+@media (min-width: 1000px) {
+  .main {
+    min-height: 90vh;
   }
-  .itemButton{
-    width:300px;
-    height:300px;
-}
-}
-
-/* Desktop large */
-@media (min-width:1200px){
-  .itemButton{
-    width:30vw;
-    height:30vw;
+  .itemButton {
+    width: 300px;
+    height: 300px;
   }
 }
-/* Screens that support "hover" (e.g desktop)*/
-@media(hover:hover){
 
-.itemButton{
-  background-color: rgba(128, 128, 128, 0.722);
-}
-
-.item:nth-child(even) .itemButton{
-  
-  background-color: grey;
-} 
-
-
-.item:hover{
-  color:black;
-}
-#btnSvtpk:hover *{
-
-background-color:rgba(255, 255, 255, 0.505);
-padding:5px;
-}
-.itemButton:hover .title{
-  color:black;
-  opacity:1;
-}
-.item:nth-child(even) .itemButton:hover{
-  
-  background-color: #183e13;
-  background-color: orange;
-}
-.item:nth-child(1) .itemButton:hover{
-  background-color: #00c800;
+/*  Desktop large -------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .itemButton {
+    width: 30vw;
+    height: 30vw;
+  }
 }
 
-.item:nth-child(2) .itemButton:hover{
-  
-  background-color: #2c5334;
-}
-.item:nth-child(3) .itemButton:hover{
-  background-color: #ed0000;
-}
-.item:nth-child(4) .itemButton:hover{
-  background-color: #1c4c64;
-}
-.item:nth-child(5) .itemButton:hover{
-  background-color: #f35323;
-}
+/* Screens that support "hover" (e.g desktop) ----------------------------------------*/
+@media (hover: hover) {
+  .itemButton {
+    background-color: rgba(128, 128, 128, 0.722);
+  }
+
+  .item:nth-child(even) .itemButton {
+    background-color: grey;
+  }
+
+  .item:hover {
+    color: black;
+  }
+
+  .title {
+    visibility: none;
+  }
+
+  #btnSvtpk:hover * {
+    background-color: rgba(255, 255, 255, 0.505);
+    padding: 5px;
+    visibility: visible;
+  }
+  .itemButton:hover .title {
+    color: black;
+    opacity: 1;
+  }
+  .item:nth-child(even) .itemButton:hover {
+    background-color: #183e13;
+    background-color: orange;
+  }
+  .item:nth-child(1) .itemButton:hover {
+    background-color: #00c800;
+  }
+
+  .item:nth-child(2) .itemButton:hover {
+    background-color: #2c5334;
+  }
+  .item:nth-child(3) .itemButton:hover {
+    background-color: #ed0000;
+  }
+  .item:nth-child(4) .itemButton:hover {
+    background-color: #1c4c64;
+  }
+  .item:nth-child(5) .itemButton:hover {
+    background-color: #f35323;
+  }
 }

@@ -1,8 +1,7 @@
-export default function Test(){
-
+export default function Test() {
   return (
     <>
-    <div>TEST</div>
+      <div>TEST</div>
     </>
-  )
+  );
 }

@@ -1,19 +1,18 @@
 :root {
-  --dark_green:#1E441E;
+  --dark_green: #1e441e;
 }
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 18px; 
+  font-size: 18px;
   background-image: url(../../public/images/stenar-tall.jpeg);
   background-position-y: bottom;
   background-position-x: center;
   background-size: cover;
-
 }
 
 * {
@@ -27,52 +26,48 @@ a {
 }
 
 a:hover {
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: underline;
 }
 
-.button{
+.button {
   border-radius: 100px;
-  
 }
 
-
-.main{
-  display:flex;
-  flex-direction:column;
-  align-items:stretch;
-  justify-content:baseline;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: baseline;
   text-align: center;
   min-height: 100vh;
-  min-width:100vw;
+  min-width: 100vw;
 }
 
-.main .startpage_button{
+.main .startpage_button {
   height: 20%;
-  margin:2px;
-  background-color: #2A7221; 
+  margin: 2px;
+  background-color: #2a7221;
   color: white;
   border-radius: 10px;
   text-shadow: rgb(1, 37, 4) 0px 1px 2px;
 }
-.main .startpage_button:hover{
+.main .startpage_button:hover {
   color: black;
 }
 
-
+/* Desktop -------------------------------------------------------------------------------*/
 @media (min-width: 700px) {
-  .main{
+  .main {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    min-width:100%;
+    justify-content: center;
+    min-width: 100%;
   }
-  .startpage_button{
+  .startpage_button {
     justify-self: center;
     justify-content: center;
     width: 40vw;
     max-width: 680px;
-
-    
   }
 }
