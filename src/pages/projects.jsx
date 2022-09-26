@@ -27,6 +27,7 @@ export default function Projects() {
     <>
       <div className={styles.main}>
         <div className={styles.buttonContainer}>
+          
           <div className={styles.item}>
             <Link href="/projects/SVTpk">
               <button
@@ -56,7 +57,7 @@ export default function Projects() {
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
                     Pokertimer <br />
-                    Webb-app
+                    Web-app
                   </h4>
                 </div>
               </button>
@@ -101,6 +102,7 @@ export default function Projects() {
           </div>
           <div className={styles.item}>
             <button
+              
               className={styles.itemButton}
               id={styles.utfyllnad}
             ></button>

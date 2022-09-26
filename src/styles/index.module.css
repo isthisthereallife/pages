@@ -1,55 +1,51 @@
-
-.bg{
-  
+.bg {
   background-image: url(../../public/images/stenar-tall.jpeg);
   background-position-y: bottom;
   background-position-x: center;
   background-size: cover;
-
 }
-.carousel_item{
+.carousel_item {
   border: 4px solid black !important;
   visibility: hidden;
-  cursor:pointer;
+  cursor: pointer;
 }
-.carousel_item *{
-  cursor:pointer;
+.carousel_item * {
+  cursor: pointer;
 }
-.carousel_link{
-  cursor:pointer;
+.carousel_link {
+  cursor: pointer;
 }
-.carousel_link{
-  cursor:pointer;
+.carousel_link {
+  cursor: pointer;
 }
-  .carousel_caption_light, .carousel_caption_red {
-  color:white !important;
+.carousel_caption_light,
+.carousel_caption_red {
+  color: white !important;
 }
 
-@media (hover:hover){
-  .carousel_item{
-  cursor:pointer;
+@media (hover: hover) {
+  .carousel_item {
+    cursor: pointer;
   }
-  
+
   .carousel_link {
-  cursor:pointer;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 600px) {
-
-  .bg{
-    
+  .bg {
     background-image: url(../../public/images/stenar-wide.jpeg);
-    background-size:cover;
+    background-size: cover;
   }
 
-  .carousel_caption{
+  .carousel_caption {
     background-color: rgba(255, 255, 255, 0.784);
   }
-  .carousel_caption_light{
-    background-color:rgb(30, 68, 30,0.7) ;
-  } 
-  .carousel_caption_red{
-    background-color:rgb(255, 0, 0,0.7);
+  .carousel_caption_light {
+    background-color: rgb(30, 68, 30, 0.7);
+  }
+  .carousel_caption_red {
+    background-color: rgb(255, 0, 0, 0.7);
   }
 }

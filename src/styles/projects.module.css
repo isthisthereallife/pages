@@ -176,11 +176,36 @@
   .title {
     visibility: none;
   }
+  .titleCard {
+    visibility: hidden;
+  }
 
-  #btnSvtpk:hover * {
+  #btnSvtpk:hover .titleCard {
     background-color: rgba(255, 255, 255, 0.505);
-    padding: 5px;
     visibility: visible;
+    border-radius: 10px;
+  }
+  #btnPoker:hover .titleCard {
+    background-color: rgba(255, 255, 255, 0.505);
+    visibility: visible;
+    border-radius: 10px;
+  }
+
+  #btnMurvel:hover .titleCard {
+    background-color: rgba(255, 255, 255, 0.505);
+    visibility: visible;
+    border-radius: 10px;
+  }
+
+  #btnGilf:hover .titleCard {
+    background-color: rgba(255, 255, 255, 0.505);
+    visibility: visible;
+    border-radius: 10px;
+  }
+  #btnAudioplayer:hover .titleCard {
+    background-color: rgba(255, 255, 255, 0.505);
+    visibility: visible;
+    border-radius: 10px;
   }
   .itemButton:hover .title {
     color: black;

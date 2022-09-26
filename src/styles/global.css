@@ -37,10 +37,10 @@ a:hover {
 .main {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   justify-content: baseline;
   text-align: center;
-  min-height: 100vh;
+  min-height: 84vh;
   min-width: 100vw;
 }
 
@@ -55,14 +55,22 @@ a:hover {
 .main .startpage_button:hover {
   color: black;
 }
+.carousel-inner {
+  max-height: 60vh;
+  width: auto;
+}
 
 /* Desktop -------------------------------------------------------------------------------*/
 @media (min-width: 700px) {
   .main {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
     min-width: 100%;
+  }
+  .carousel {
+    width: 80%;
+    margin: 10px;
   }
   .startpage_button {
     justify-self: center;

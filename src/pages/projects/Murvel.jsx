@@ -46,7 +46,7 @@ export default function Murvel() {
           >
             <Carousel.Item interval={5000} className={styles.project_image_div}>
               <Image
-                className={styles.projectImage}
+                className={styles.project_image}
                 src={murvelImg}
                 id="murvelImg"
                 alt="A screenshot of the Murvel App"
@@ -55,7 +55,7 @@ export default function Murvel() {
             </Carousel.Item>
             <Carousel.Item className={styles.project_image_div}>
               <Image
-                className={styles.projectImage}
+                className={styles.project_image}
                 src={murvelGif}
                 id="murvelGif"
                 alt="A gif of the Murvel App"

@@ -27,9 +27,9 @@ export default function SVTpk() {
     <>
       <div className="main">
         <h2 className={styles.title}>Privatkopiera från SVT</h2>
-        <div width="680" height="520" className={styles.projectImageDiv}>
+        <div width="680" height="520" className={styles.project_image_div}>
           <Image
-            className={styles.projectImage}
+            className={styles.project_image}
             src={imgSvtpk}
             alt="Screen capture from the program SVTpk"
           />

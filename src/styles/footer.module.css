@@ -1,30 +1,36 @@
-.main{
-  z-index:5;
-  color:white;
-  background: radial-gradient(at 270% 99%, #ffffff 1%, #053d03 50%, #053d03 100%);
-  display:flex;
-  flex-direction:row;
-  align-items:center;
+.main {
+  z-index: 5;
+  color: white;
+  background: radial-gradient(
+    at 270% 99%,
+    #ffffff 1%,
+    #053d03 50%,
+    #053d03 100%
+  );
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-evenly;
-  position:sticky;
-  bottom:0;
-  width:100%;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
   height: 8vh;
   text-shadow: rgba(0, 0, 0, 1) 0px 1px 2px;
 }
-.icon{
+.icon {
   /*background: radial-gradient(at 100% 50%, #042a00 10vh, #053d03 50%, #0a5501 100%);
   */
-  background-color:  #053d03;
+  background-color: #053d03;
   align-self: center;
   justify-content: center;
-  color:white;
+  color: white;
+  
 }
 
-.main a{
+.main a {
   color: white;
   text-decoration: none;
 }
-.link{
-  cursor:pointer;
+.link {
+  cursor: pointer;
 }

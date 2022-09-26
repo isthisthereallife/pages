@@ -25,15 +25,13 @@ export default function Audioplayer() {
     <>
       <div className="main">
         <Link href="https://acornsfordinner.github.io/musikspelare/">
-          <div>
-            <div width="680" height="520">
-              <Image className={styles.projectImage} src={projectImage} />
-            </div>
+          <div className={styles.project_image_div}>
+            <Image className={styles.project_image} src={projectImage} />
             <button>Testa</button>
           </div>
         </Link>
         <div className={styles.infoText} id={styles.audioplayerInfo}>
-          Basic audio player made with jQuery
+          Responsive audio player made with jQuery
         </div>
       </div>
     </>
