@@ -8,8 +8,8 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/pages/Pokertimer',
-        destination: '/Pokertimer',
+        source: '/Pokertimer',
+        destination: 'https://isthisthereallife.github.io/Pokertimer/',
       },
     ]
   },
