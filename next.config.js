@@ -6,12 +6,18 @@ module.exports = {
   assetPrefix: "/pages/",
 
   async rewrites() {
-    return [
-      {
-        source: '/Pokertimer',
-        destination: 'https://isthisthereallife.github.io/Pokertimer/',
-      },
-    ]
+    return {
+      beforeFiles: [
+        {
+          source: '/Pokertimer',
+          destination: 'https://isthisthereallife.github.io/Pokertimer/',
+        },
+        {
+          source: '/pages/Pokertimer',
+          destination: `https://isthisthereallife.github.io/pages/Pokertimer`,
+        },
+      ],
+    }
   },
 }
 
