@@ -14,7 +14,7 @@ module.exports = {
         },
         {
           source: '/pages/Pokertimer',
-          destination: `https://isthisthereallife.github.io/pages/Pokertimer`,
+          destination: `https://isthisthereallife.github.io/Pokertimer`,
         },
       ],
     }
