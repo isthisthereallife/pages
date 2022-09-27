@@ -3,7 +3,16 @@ module.exports = {
     unoptimized: true,
   },
   basePath: "/pages",
-  assetPrefix: "/pages",
+  assetPrefix: "/pages/",
+
+  async rewrites() {
+    return [
+      {
+        source: '/pages/Pokertimer',
+        destination: '/Pokertimer',
+      },
+    ]
+  },
 }
 
 
