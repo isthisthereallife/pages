@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/project.module.css";
 import "bootstrap/dist/css/bootstrap.css";
+import styles from "../../styles/project.module.css";
 import murvelImg from "../../../public/images/murvelTall.png";
 import murvelGif from "../../../public/images/murvel.gif";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";

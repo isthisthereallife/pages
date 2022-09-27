@@ -26,7 +26,7 @@ export default function Pokertimer() {
     <>
       <div className="main">
         <div className={styles.project_image_div}>
-          <Link href="/projects/Pokertimer/Pokertimer">
+          <Link href="https://isthisthereallife.github.io/Pokertimer">
             <Image
               width="600px"
               height="450px"
@@ -37,8 +37,11 @@ export default function Pokertimer() {
           </Link>
         </div>
         <div className={styles.project_links}>
-          <Link href="/projects/Pokertimer/Pokertimer">
-            <button className={styles.playBtn}>Starta</button>
+          <Link href="https://isthisthereallife.github.io/Pokertimer">
+            <div>
+              <button className={styles.playBtn}>Start</button>
+              <div>(Works best in desktop)</div>
+            </div>
           </Link>
         </div>
       </div>

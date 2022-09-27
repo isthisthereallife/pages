@@ -27,7 +27,7 @@ export default function Audioplayer() {
         <Link href="https://acornsfordinner.github.io/musikspelare/">
           <div className={styles.project_image_div}>
             <Image className={styles.project_image} src={projectImage} />
-            <button>Testa</button>
+            <button>Start</button>
           </div>
         </Link>
         <div className={styles.infoText} id={styles.audioplayerInfo}>
