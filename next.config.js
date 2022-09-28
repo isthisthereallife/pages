@@ -4,21 +4,6 @@ module.exports = {
   },
   basePath: "/pages",
   assetPrefix: "/pages/",
-
-  async rewrites() {
-    return {
-      beforeFiles: [
-        {
-          source: '/Pokertimer',
-          destination: 'https://isthisthereallife.github.io/Pokertimer/',
-        },
-        {
-          source: '/pages/Pokertimer',
-          destination: `https://isthisthereallife.github.io/Pokertimer`,
-        },
-      ],
-    }
-  },
 }
 
 
