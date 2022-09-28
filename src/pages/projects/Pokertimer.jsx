@@ -40,7 +40,7 @@ export default function Pokertimer() {
           <Link href="https://acornsfordinner.github.io/pokertimer/">
             <div>
               <button className={styles.playBtn}>Start</button>
-              <div>(Works best in desktop)</div>
+              <div>(Works best on desktop)</div>
             </div>
           </Link>
         </div>
