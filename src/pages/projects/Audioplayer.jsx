@@ -26,6 +26,7 @@ export default function Audioplayer() {
     <>
       <Head>
         <title>Audioplayer - JS, jQuery, HTML/CSS</title>
+        <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className="main">
         <Link href="https://acornsfordinner.github.io/musikspelare/">

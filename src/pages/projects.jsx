@@ -28,6 +28,7 @@ export default function Projects() {
     <>
       <Head>
         <title>Projects</title>
+        <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className={styles.main}>
         <div className={styles.buttonContainer}>

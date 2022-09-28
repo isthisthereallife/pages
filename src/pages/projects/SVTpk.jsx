@@ -28,6 +28,7 @@ export default function SVTpk() {
     <>
       <Head>
         <title>SVTpk - Privatkopiera från SVT Play</title>
+        <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className="main">
         <h2 className={styles.title}>Privatkopiera från SVT Play</h2>

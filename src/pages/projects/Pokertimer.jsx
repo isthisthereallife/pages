@@ -27,6 +27,7 @@ export default function Pokertimer() {
     <>
       <Head>
         <title>Pokertimer - JS, jQuery, HTML/CSS</title>
+        <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className="main">
         <div className={styles.project_image_div}>

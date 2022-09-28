@@ -1,5 +1,6 @@
 :root {
   --dark_green: #1e441e;
+  --nav_green: #053d03;
 }
 html,
 body {
@@ -9,10 +10,14 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+}
+body {
   background-image: url(../../public/images/stenar-tall.jpeg);
   background-position-y: bottom;
   background-position-x: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--nav_green);
 }
 
 * {

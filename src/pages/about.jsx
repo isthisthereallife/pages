@@ -8,6 +8,7 @@ export default function AboutYou() {
     <>
       <Head>
         <title>About me</title>
+        <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className="main">
         <Image src={img} />

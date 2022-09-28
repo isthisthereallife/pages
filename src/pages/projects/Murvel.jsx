@@ -33,6 +33,7 @@ export default function Murvel() {
     <>
       <Head>
         <title>Murvel - Kotlin, Gradle, Firebase</title>
+        <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className="main">
         <div className={styles.project_image_div}>

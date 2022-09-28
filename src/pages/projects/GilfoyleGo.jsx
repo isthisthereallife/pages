@@ -32,6 +32,7 @@ export default function GilfoyleGo() {
     <>
       <Head>
         <title>Gilfoyle Go - Spring Boot, Vue, MySQL</title>
+        <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className="main">
         <div className={styles.project_image_div} width="600" height="400">
