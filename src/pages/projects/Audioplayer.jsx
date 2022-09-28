@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import useCreep from "../../lib/hooks/useCreep";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
+import Head from "next/head";
 
 export default function Audioplayer() {
   let creep = useCreep();
@@ -23,6 +24,9 @@ export default function Audioplayer() {
 
   return (
     <>
+      <Head>
+        <title>Audioplayer - JS, jQuery, HTML/CSS</title>
+      </Head>
       <div className="main">
         <Link href="https://acornsfordinner.github.io/musikspelare/">
           <div className={styles.project_image_div}>

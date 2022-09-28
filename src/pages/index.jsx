@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/index.module.css";
@@ -40,6 +41,10 @@ function HomePage() {
 
   return (
     <>
+      <Head>
+        <title>isthisthereallife</title>
+        <link rel="icon" href="/pages/favicon.ico" />
+      </Head>
       <div className="main">
         {
           <Carousel

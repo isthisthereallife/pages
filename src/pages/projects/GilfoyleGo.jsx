@@ -11,6 +11,7 @@ import imgVue from "../../../public/images/vuejs2.png";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import useCreep from "../../lib/hooks/useCreep";
 import { useEffect } from "react";
+import Head from "next/head";
 
 export default function GilfoyleGo() {
   const creep = useCreep();
@@ -29,6 +30,9 @@ export default function GilfoyleGo() {
 
   return (
     <>
+      <Head>
+        <title>Gilfoyle Go - Spring Boot, Vue, MySQL</title>
+      </Head>
       <div className="main">
         <div className={styles.project_image_div} width="600" height="400">
           <Image className={styles.project_image} src={imgGilfoyle} />

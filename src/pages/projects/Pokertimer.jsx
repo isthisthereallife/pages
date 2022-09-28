@@ -5,6 +5,7 @@ import imgPoker from "../../../public/images/poker.png";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import useCreep from "../../lib/hooks/useCreep";
 import { useEffect } from "react";
+import Head from "next/head";
 
 export default function Pokertimer() {
   const creep = useCreep();
@@ -24,6 +25,9 @@ export default function Pokertimer() {
 
   return (
     <>
+      <Head>
+        <title>Pokertimer - JS, jQuery, HTML/CSS</title>
+      </Head>
       <div className="main">
         <div className={styles.project_image_div}>
           <Link href="https://acornsfordinner.github.io/pokertimer/">

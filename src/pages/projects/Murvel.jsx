@@ -5,6 +5,7 @@ import murvelGif from "../../../public/images/murvelgif.gif";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import useCreep from "../../lib/hooks/useCreep";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 export default function Murvel() {
   const creep = useCreep();
@@ -30,6 +31,9 @@ export default function Murvel() {
 
   return (
     <>
+      <Head>
+        <title>Murvel - Kotlin, Gradle, Firebase</title>
+      </Head>
       <div className="main">
         <div className={styles.project_image_div}>
           <Image

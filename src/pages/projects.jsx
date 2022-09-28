@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { Button } from "react-bootstrap";
 import Image from "next/image";
 import bgimg from "../../public/images/java.png";
+import Head from "next/head";
 
 export default function Projects() {
   const creep = useCreep();
@@ -25,9 +26,11 @@ export default function Projects() {
 
   return (
     <>
+      <Head>
+        <title>Projects</title>
+      </Head>
       <div className={styles.main}>
         <div className={styles.buttonContainer}>
-          
           <div className={styles.item}>
             <Link href="/projects/SVTpk">
               <button
@@ -102,7 +105,6 @@ export default function Projects() {
           </div>
           <div className={styles.item}>
             <button
-              
               className={styles.itemButton}
               id={styles.utfyllnad}
             ></button>

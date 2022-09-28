@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -9,15 +9,6 @@ function App() {
         <p>
           HEMSIDA 1 : <code>src/App.js</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Under konstruktion
-
-        </a>
       </header>
     </div>
   );

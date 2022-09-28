@@ -6,6 +6,7 @@ import imgJava from "../../../public/images/java.png";
 import useCreep from "../../lib/hooks/useCreep";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import { useEffect, useRef } from "react";
+import Head from "next/head";
 
 export default function SVTpk() {
   const creep = useCreep();
@@ -25,8 +26,11 @@ export default function SVTpk() {
 
   return (
     <>
+      <Head>
+        <title>SVTpk - Privatkopiera från SVT Play</title>
+      </Head>
       <div className="main">
-        <h2 className={styles.title}>Privatkopiera från SVT</h2>
+        <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
         <div width="680" height="520" className={styles.project_image_div}>
           <Image
             className={styles.project_image}
