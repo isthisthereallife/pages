@@ -3,7 +3,8 @@ import styles from "../styles/about.module.css";
 import Image from "next/image";
 import img from "../../public/images/ooo.jpeg";
 import Head from "next/head";
-export default function AboutYou() {
+import Link from "next/link";
+export default function About() {
   return (
     <>
       <Head>
@@ -11,7 +12,16 @@ export default function AboutYou() {
         <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div className="main">
-        <Image src={img} />
+        <div className={styles.main}>
+          <div className={styles.box}>
+            <Link href="https://github.com/isthisthereallife">Github</Link>
+          </div>
+          <div className={styles.box}>
+            <Link href="https://www.linkedin.com/in/magnus-pettersson-467ab823a/">
+              Linkedin
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

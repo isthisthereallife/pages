@@ -24,7 +24,6 @@
   align-self: center;
   justify-content: center;
   color: white;
-  
 }
 
 .main a {
@@ -33,4 +32,6 @@
 }
 .link {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }

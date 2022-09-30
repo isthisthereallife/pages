@@ -26,6 +26,7 @@ function HomePage() {
         payload: {
           currentIndex: 0,
           currentPageType: "home",
+          currentPage: "home",
         },
         type: CREEP_EVENTS.UPDATE,
       });
