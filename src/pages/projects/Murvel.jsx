@@ -43,6 +43,8 @@ export default function Murvel() {
             id="murvelGif"
             alt="A GIF showing the Murvel App"
             variant="top"
+            placeholder="blur"
+            blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8zsDwHwAEpQHoSo7vHAAAAABJRU5ErkJggg=="
           />
         </div>
         <div className={styles.infoText} id={styles.murvelInfo}>

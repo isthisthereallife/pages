@@ -49,7 +49,7 @@ function HomePage() {
       <div className="main">
         {
           <Carousel
-            className={styles.carouselMain}
+            className={styles.carousel_main}
             pause={false}
             fade
             variant="dark"

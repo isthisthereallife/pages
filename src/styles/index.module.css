@@ -4,10 +4,20 @@
   background-position-x: center;
   background-size: cover;
 }
+.carousel_main {
+  max-width: 45vw;
+}
+.carousel-inner {
+  max-height: 50vh;
+  width: auto;
+}
 .carousel_item {
   border: 4px solid black !important;
   visibility: hidden;
   cursor: pointer;
+}
+.carousel_item img {
+  max-height: 100%;
 }
 .carousel_item * {
   cursor: pointer;
@@ -33,12 +43,21 @@
   }
 }
 
-@media (max-width: 600px) {
+/* MOBILE & TABLET ------------------------ */
+@media (max-width: 1100px) {
   .bg {
     background-image: url(../../public/images/stenar-wide.jpeg);
     background-size: cover;
   }
+  .carousel-control-prev {
+    visibility: hidden;
+  }
 
+  .carousel_main {
+    width: 100%;
+    max-width: 900px;
+    margin: 0px;
+  }
   .carousel_caption {
     background-color: rgba(255, 255, 255, 0.784);
   }
