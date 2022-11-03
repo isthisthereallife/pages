@@ -50,14 +50,35 @@ export default function Murvel() {
         <div className={styles.infoText} id={styles.murvelInfo}>
           All the Marvel info you could possibly want, <br />
           in the palm of your hand.
-          <p>Made for Android devices.</p>
-          <h5>Written in Kotlin.</h5>
-        </div>
-
-        <div className={styles.project_links}>
-          <Link href="https://github.com/isthisthereallife/MarvellisimoApp">
-            source code
-          </Link>
+          <br />
+          <br />
+          Features
+          <ul className={styles.list_lefty}>
+            <li className={styles.list_item}>
+              Look up any Marvel Character or Comic Book
+            </li>
+            <li className={styles.list_item}>
+              Find every character in a specific comic
+            </li>
+            <li className={styles.list_item}>
+              Find every comic that a character has appeared in
+            </li>
+            <li className={styles.list_item}>
+              Create your own personal account
+            </li>
+            <li className={styles.list_item}>Save your favourites</li>
+            <li className={styles.list_item}>
+              Send recommendations to friends
+            </li>
+          </ul>
+          <h4>Uses Google Firebase</h4>
+          <h4>Written in Kotlin.</h4>
+          <h4>Made for Android devices</h4>
+          <div className={styles.project_links}>
+            <Link href="https://github.com/isthisthereallife/MarvellisimoApp">
+              source code
+            </Link>
+          </div>
         </div>
       </div>
     </>

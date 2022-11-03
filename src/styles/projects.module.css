@@ -13,14 +13,17 @@
 #btnSvtpk {
   background-image: url(../../public/images/svtpk.png);
 }
-#btnPoker {
-  background-image: url(../../public/images/poker.png);
+#btnWebshop {
+  background-image: url(../../public/images/webshop.png);
 }
 #btnMurvel {
   background-image: url(../../public/images/murvel.png);
 }
 #btnGilf {
   background-image: url(../../public/images/gilfoyle.png);
+}
+#btnPoker {
+  background-image: url(../../public/images/poker.png);
 }
 #btnAudioplayer {
   background-image: url(../../public/images/audioplayer.png);
@@ -112,14 +115,17 @@
   #btnSvtpk {
     background-image: url(../../public/images/svtpk.png);
   }
-  #btnPoker {
-    background-image: url(../../public/images/poker.png);
+  #btnWebshop {
+    background-image: url(../../public/images/webshop.png);
   }
   #btnMurvel {
     background-image: url(../../public/images/murvel.png);
   }
   #btnGilf {
     background-image: url(../../public/images/gilfoyle.png);
+  }
+  #btnPoker {
+    background-image: url(../../public/images/poker.png);
   }
   #btnAudioplayer {
     background-image: url(../../public/images/audioplayer.png);
@@ -185,12 +191,11 @@
     visibility: visible;
     border-radius: 10px;
   }
-  #btnPoker:hover .titleCard {
+  #btnWebshop:hover .titleCard {
     background-color: rgba(255, 255, 255, 0.505);
     visibility: visible;
     border-radius: 10px;
   }
-
   #btnMurvel:hover .titleCard {
     background-color: rgba(255, 255, 255, 0.505);
     visibility: visible;
@@ -198,6 +203,11 @@
   }
 
   #btnGilf:hover .titleCard {
+    background-color: rgba(255, 255, 255, 0.505);
+    visibility: visible;
+    border-radius: 10px;
+  }
+  #btnPoker:hover .titleCard {
     background-color: rgba(255, 255, 255, 0.505);
     visibility: visible;
     border-radius: 10px;

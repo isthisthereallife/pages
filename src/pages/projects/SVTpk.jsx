@@ -40,12 +40,15 @@ export default function SVTpk() {
           />
         </div>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
-          <h5>Portable application. Grapical User Interface.</h5>
-          <div>
-            A standalone Java application.
-            <br />
-            Enables downloads from SVT Play.
-          </div>
+          <span>Features</span>
+          <ul className={styles.list_lefty}>
+            <li className={styles.list_item}>
+              Enables downloads from SVT Play
+            </li>
+            <li className={styles.list_item}>Graphical User Interface</li>
+            <li className={styles.list_item}>Standalone Java application</li>
+            <li className={styles.list_item}>Fully Portable</li>
+          </ul>
           <div>
             Written in
             <Link href="https://www.java.com">

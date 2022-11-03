@@ -84,12 +84,24 @@
   color: white;
   width: fit-content;
   max-width: 680px;
-  max-height: 450px;
+  /*max-height: 450px;*/
   border-radius: 10px;
   font-size: 1.1em;
 }
+
+.list_lefty {
+  align-items: flex-start;
+}
+.list_item {
+  max-width: fit-content;
+  text-align: left;
+}
+
 #murvelInfo {
   background-color: rgb(231, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #gilfoyleInfo {
   background-color: rgb(255, 255, 255, 0.7);

@@ -38,12 +38,6 @@ export default function Projects() {
                 className={styles.itemButton}
                 id={styles.btnSvtpk}
                 variant="outline-primary"
-                onTouchStart={(x) => {
-                  console.log("touched: ", x);
-                  console.log("x.target.id: ", x.target.id);
-                  console.log(x.target.parentElement);
-                  console.log(x.target.parentElement);
-                }}
               >
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
@@ -56,12 +50,13 @@ export default function Projects() {
           </div>
 
           <div className={styles.item}>
-            <Link href="/projects/Pokertimer">
-              <button className={styles.itemButton} id={styles.btnPoker}>
+            <Link href="/projects/Webshop">
+              <button className={styles.itemButton} id={styles.btnWebshop}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Pokertimer <br />
-                    Web-app
+                    Web shop <br />
+                    <br />
+                    React/Next.js app
                   </h4>
                 </div>
               </button>
@@ -73,7 +68,8 @@ export default function Projects() {
               <button className={styles.itemButton} id={styles.btnMurvel}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Murvel <br /> Android-app
+                    Murvel <br /> <br />
+                    Android App
                   </h4>
                 </div>
               </button>
@@ -85,30 +81,37 @@ export default function Projects() {
               <button className={styles.itemButton} id={styles.btnGilf}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Hotel booking <br /> Web-App
+                    Hotel booking <br />
+                    <br /> Web App
                   </h4>
                 </div>
               </button>
             </Link>
           </div>
-
+          <div className={styles.item}>
+            <Link href="/projects/Pokertimer">
+              <button className={styles.itemButton} id={styles.btnPoker}>
+                <div className={styles.titleCard}>
+                  <h4 className={styles.title}>
+                    Poker Timer <br />
+                    <br />
+                    Web App
+                  </h4>
+                </div>
+              </button>
+            </Link>
+          </div>
           <div className={styles.item}>
             <Link href="/projects/Audioplayer">
               <button className={styles.itemButton} id={styles.btnAudioplayer}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Audioplayer <br />
+                    Audio player <br />
                     <br /> Built with jQuery
                   </h4>
                 </div>
               </button>
             </Link>
-          </div>
-          <div className={styles.item}>
-            <button
-              className={styles.itemButton}
-              id={styles.utfyllnad}
-            ></button>
           </div>
         </div>
 

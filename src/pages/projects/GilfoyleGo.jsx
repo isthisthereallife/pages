@@ -39,10 +39,13 @@ export default function GilfoyleGo() {
           <Image className={styles.project_image} src={imgGilfoyle} />
         </div>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
-          <h3>Hotel Booking Web-App</h3>
-          <p>
-            Fully functional application for finding and booking hotel rooms.
-          </p>
+          <h4>Mock hotel booking app.</h4>
+          <span>Featuring</span>
+          <ul className={styles.list_lefty}>
+            <li className={styles.list_item}>Spring Boot Backend</li>
+            <li className={styles.list_item}>Vue Frontend</li>
+            <li className={styles.list_item}>MySQL Database</li>
+          </ul>
           <br />
           <div>
             <Link href="https://www.java.com">
@@ -64,12 +67,13 @@ export default function GilfoyleGo() {
               <Image src={imgHtml5} height="40" width="40" />
             </Link>
           </div>
-        </div>
-        <br />
-        <div className={styles.project_links}>
-          <Link href="https://github.com/isthisthereallife/Hotel-Booking-App">
-            source code
-          </Link>
+
+          <br />
+          <div className={styles.project_links}>
+            <Link href="https://github.com/isthisthereallife/Hotel-Booking-App">
+              source code
+            </Link>
+          </div>
         </div>
       </div>
     </>

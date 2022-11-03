@@ -11,10 +11,10 @@ export default function Pokertimer() {
   const creep = useCreep();
 
   useEffect(() => {
-    if (creep.creep.currentIndex !== 11) {
+    if (creep.creep.currentIndex !== 14) {
       creep.creepDispatch({
         payload: {
-          currentIndex: 11,
+          currentIndex: 14,
           currentPage: "Pokertimer",
           currentPageType: "project",
         },
@@ -41,13 +41,30 @@ export default function Pokertimer() {
             />
           </Link>
         </div>
-        <div className={styles.project_links}>
-          <Link href="https://acornsfordinner.github.io/pokertimer/">
-            <div>
-              <button className={styles.playBtn}>Start</button>
-              <div>(Works best on desktop)</div>
-            </div>
-          </Link>
+        <div className={styles.infoText} id={styles.gilfoyleInfo}>
+          <h4>Poker Timer</h4>
+          <span>Featuring</span>
+          <ul className={styles.list_lefty}>
+            <li className={styles.list_item}>Keep track of blinds</li>
+            <li className={styles.list_item}>
+              Calculate winnings based on nr of players
+            </li>
+            <li className={styles.list_item}>Rebuy & Addon functionality</li>
+            <li className={styles.list_item}>Breaks included!</li>
+
+            <li className={styles.list_item}>Hilarious sound effects</li>
+            <li className={styles.list_item}>
+              Press F11 & CTRL+scroll to resize
+            </li>
+            <li className={styles.list_item}>
+              Don't even try using a small screen
+            </li>
+          </ul>
+          <div className={styles.project_links}>
+            <Link href="https://acornsfordinner.github.io/pokertimer/">
+              try it out
+            </Link>
+          </div>{" "}
         </div>
       </div>
     </>
