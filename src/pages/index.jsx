@@ -12,7 +12,7 @@ import imgGilfoyle from "../../public/images/gilfoyle.png";
 import Carousel from "react-bootstrap/Carousel";
 import imgPoker from "../../public/images/poker.png";
 import imgMurvel from "../../public/images/murvel2.png";
-import imageAudioplayer from "../../public/images/audioplayer.png";
+import imgWebshop from "../../public/images/webshop.png";
 
 import { CREEP_EVENTS } from "../reducers/creepReducer";
 
@@ -76,27 +76,22 @@ function HomePage() {
                 </Link>
               </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item interval={2500}>
-              <Link
-                href="/projects/Pokertimer"
-                className={styles.carousel_link}
-              >
+              <Link href="/projects/Webshop" className={styles.carousel_link}>
                 <Image
                   className={styles.carousel_image}
-                  src={imgPoker}
+                  src={imgWebshop}
                   width="680"
                   height="520"
-                  alt="Pokertimer"
+                  alt=""
                 />
               </Link>
-              <Carousel.Caption className={styles.carousel_caption_light}>
-                <Link
-                  href="/projects/Pokertimer"
-                  className={styles.carousel_link}
-                >
+              <Carousel.Caption className={styles.carousel_caption}>
+                <Link href="/projects/Webshop" className={styles.carousel_link}>
                   <div>
-                    <h5>Pokertimer</h5>
-                    <p>Håll koll på tiden!</p>
+                    <h5>Web App</h5>
+                    <p>API-calls and dynamic page generation</p>
                   </div>
                 </Link>
               </Carousel.Caption>
@@ -141,34 +136,33 @@ function HomePage() {
                   className={styles.carousel_link}
                 >
                   <div>
-                    <h5>Web App</h5>
-                    <p>Hotell booking service</p>
+                    <h5>Gilfoyle Go</h5>
+                    <p>Spring Boot & Vue App</p>
                   </div>
                 </Link>
               </Carousel.Caption>
             </Carousel.Item>
-
             <Carousel.Item interval={2500}>
               <Link
-                href="/projects/Audioplayer"
+                href="/projects/Pokertimer"
                 className={styles.carousel_link}
               >
                 <Image
                   className={styles.carousel_image}
-                  src={imageAudioplayer}
+                  src={imgPoker}
                   width="680"
                   height="520"
-                  alt="Audio player made with jQuery"
+                  alt="Pokertimer"
                 />
               </Link>
               <Carousel.Caption className={styles.carousel_caption_light}>
                 <Link
-                  href="/projects/Audioplayer"
+                  href="/projects/Pokertimer"
                   className={styles.carousel_link}
                 >
                   <div>
-                    <h5>Audio player</h5>
-                    <p>Made with jQuery</p>
+                    <h5>Pokertimer</h5>
+                    <p>Håll koll på tiden!</p>
                   </div>
                 </Link>
               </Carousel.Caption>
