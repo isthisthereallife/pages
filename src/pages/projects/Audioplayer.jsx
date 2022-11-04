@@ -2,7 +2,8 @@ import styles from "../../styles/project.module.css";
 import projectImage from "../../../public/images/audioplayer.png";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
 import useCreep from "../../lib/hooks/useCreep";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import Head from "next/head";
@@ -22,21 +23,64 @@ export default function Audioplayer() {
     }
   });
 
+  const touchStart = useRef();
+  const touchEnd = useRef();
+  const threshold = 50;
+  const router = useRouter();
+  const onTouchStart = (event) => {
+    touchEnd.current = null;
+    touchStart.current = event.targetTouches[0].clientX;
+  };
+  const onTouchMove = (event) => {
+    touchEnd.current = event.targetTouches[0].clientX;
+  };
+  const onTouchEnd = () => {
+    if (!touchStart.current || !touchEnd.current) return;
+    const dist = touchStart.current - touchEnd.current;
+    const isLeftSwipe = dist > threshold;
+    const isRightSwipe = dist < -threshold;
+
+    if (isLeftSwipe) {
+      router.push("/projects/SVTpk");
+    } else if (isRightSwipe) {
+      router.push("/projects/Pokertimer");
+    }
+  };
+
+  useEffect(() => {
+    const onKeyUp = (e) => {
+      if (e.code === "ArrowRight") {
+        router.push("/projects/SVTpk");
+      } else if (e.code === "ArrowLeft") {
+        router.push("/projects/Pokertimer");
+      }
+    };
+    document.addEventListener("keydown", onKeyUp);
+    return () => {
+      document.removeEventListener("keydown", onKeyUp);
+    };
+  });
+
   return (
     <>
       <Head>
         <title>Audioplayer - JS, jQuery, HTML/CSS</title>
         <link rel="icon" href="/pages/favicon.ico" />
       </Head>
-      <div className="main">
-        <Link href="https://acornsfordinner.github.io/musikspelare/">
+      <div
+        className="main"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
+        <a href="https://acornsfordinner.github.io/musikspelare/">
           <div className={styles.project_image_div}>
             <Image className={styles.project_image} src={projectImage} />
           </div>
-        </Link>
+        </a>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>A somewhat responsive audio player made with jQuery</h4>
-          <br />
+
           Features
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
@@ -45,14 +89,17 @@ export default function Audioplayer() {
             <li className={styles.list_item}>
               This one's really not that great tbh
             </li>
+            <li className={styles.list_item}>It is developed Mobile First</li>
             <li className={styles.list_item}>
-              I do like the colour scheme, tho
+              And I do like the colour scheme
             </li>
             <li className={styles.list_item}>But seriously </li>
             <li className={styles.list_item}>
-              Please check out my other projects instead
+              Please check out <Link href="/projects">my other projects</Link>{" "}
+              instead
             </li>
           </ul>
+
           <div className={styles.project_links}>
             <Link href="https://acornsfordinner.github.io/musikspelare/">
               try it out

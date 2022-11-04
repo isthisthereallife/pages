@@ -1,6 +1,7 @@
 import styles from "../../styles/project.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import imgGilfoyle from "../../../public/images/gilfoyle.png";
 import imgBootstrap from "../../../public/images/bootstrap.png";
 import imgHtml5 from "../../../public/images/html5.png";
@@ -10,7 +11,7 @@ import imgSpring from "../../../public/images/spring.png";
 import imgVue from "../../../public/images/vuejs2.png";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import useCreep from "../../lib/hooks/useCreep";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Head from "next/head";
 
 export default function GilfoyleGo() {
@@ -28,19 +29,62 @@ export default function GilfoyleGo() {
     }
   });
 
+  const touchStart = useRef();
+  const touchEnd = useRef();
+  const threshold = 50;
+  const router = useRouter();
+  const onTouchStart = (event) => {
+    touchEnd.current = null;
+    touchStart.current = event.targetTouches[0].clientX;
+  };
+  const onTouchMove = (event) => {
+    touchEnd.current = event.targetTouches[0].clientX;
+  };
+  const onTouchEnd = () => {
+    if (!touchStart.current || !touchEnd.current) return;
+    const dist = touchStart.current - touchEnd.current;
+    const isLeftSwipe = dist > threshold;
+    const isRightSwipe = dist < -threshold;
+
+    if (isLeftSwipe) {
+      router.push("/projects/Pokertimer");
+    } else if (isRightSwipe) {
+      router.push("/projects/Murvel");
+    }
+  };
+
+  useEffect(() => {
+    const onKeyUp = (e) => {
+      if (e.code === "ArrowRight") {
+        router.push("/projects/Pokertimer");
+      } else if (e.code === "ArrowLeft") {
+        router.push("/projects/Murvel");
+      }
+    };
+    document.addEventListener("keydown", onKeyUp);
+    return () => {
+      document.removeEventListener("keydown", onKeyUp);
+    };
+  });
+
   return (
     <>
       <Head>
         <title>Gilfoyle Go - Spring Boot, Vue, MySQL</title>
         <link rel="icon" href="/pages/favicon.ico" />
       </Head>
-      <div className="main">
+      <div
+        className="main"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         <div className={styles.project_image_div} width="600" height="400">
           <Image className={styles.project_image} src={imgGilfoyle} />
         </div>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>Mock hotel booking app.</h4>
-          <span>Featuring</span>
+          <span>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>Spring Boot Backend</li>
             <li className={styles.list_item}>Vue Frontend</li>

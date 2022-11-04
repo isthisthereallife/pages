@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import styles from "../../styles/project.module.css";
 import murvelGif from "../../../public/images/murvelgif.gif";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import useCreep from "../../lib/hooks/useCreep";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 
 export default function Murvel() {
@@ -29,13 +30,53 @@ export default function Murvel() {
     setIndex(selectedIndex);
   };
 
+  const touchStart = useRef();
+  const touchEnd = useRef();
+  const threshold = 50;
+  const router = useRouter();
+  const onTouchStart = (event) => {
+    touchEnd.current = null;
+    touchStart.current = event.targetTouches[0].clientX;
+  };
+  const onTouchMove = (event) => {
+    touchEnd.current = event.targetTouches[0].clientX;
+  };
+  const onTouchEnd = () => {
+    if (!touchStart.current || !touchEnd.current) return;
+    const dist = touchStart.current - touchEnd.current;
+    const isLeftSwipe = dist > threshold;
+    const isRightSwipe = dist < -threshold;
+    if (isLeftSwipe) {
+      router.push("/projects/GilfoyleGo");
+    } else if (isRightSwipe) {
+      router.push("/projects/Webshop");
+    }
+  };
+  useEffect(() => {
+    const onKeyUp = (e) => {
+      if (e.code === "ArrowRight") {
+        router.push("/projects/GilfoyleGo");
+      } else if (e.code === "ArrowLeft") {
+        router.push("/projects/Webshop");
+      }
+    };
+    document.addEventListener("keydown", onKeyUp);
+    return () => {
+      document.removeEventListener("keydown", onKeyUp);
+    };
+  });
   return (
     <>
       <Head>
         <title>Murvel - Kotlin, Gradle, Firebase</title>
         <link rel="icon" href="/pages/favicon.ico" />
       </Head>
-      <div className="main">
+      <div
+        className="main"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
+      >
         <div className={styles.project_image_div}>
           <Image
             className={styles.project_image}
