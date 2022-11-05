@@ -91,8 +91,6 @@
   /*max-height: 450px;*/
   border-radius: 10px;
   font-size: 1.1em;
-  
-  margin-bottom: 50px;
 }
 
 .list_lefty {
@@ -101,6 +99,12 @@
 .list_item {
   max-width: fit-content;
   text-align: left;
+}
+
+.murvel_link {
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(255, 255, 255) 0px 1px 2px;
+
 }
 
 #murvelInfo {
@@ -138,5 +142,10 @@
   }
   .project_links {
     max-width: 80%;
+  }
+}
+@media (hover: none) {
+  .infoText {
+    margin-bottom: 50px;
   }
 }

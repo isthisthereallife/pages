@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../../styles/project.module.css";
 import murvelGif from "../../../public/images/murvelgif.gif";
+import imgKotlin from "../../../public/images/kotlin.png";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import useCreep from "../../lib/hooks/useCreep";
 import { useEffect, useState, useRef } from "react";
@@ -99,23 +100,52 @@ export default function Murvel() {
               Look up any Marvel Character or Comic Book
             </li>
             <li className={styles.list_item}>
-              Find every character in a specific comic
-            </li>
-            <li className={styles.list_item}>
-              Find every comic that a character has appeared in
-            </li>
-            <li className={styles.list_item}>
               Create your own personal account
             </li>
             <li className={styles.list_item}>Save your favourites</li>
+
             <li className={styles.list_item}>
               Send recommendations to friends
             </li>
+            <li className={styles.list_item}>
+              Offline mode (uses{" "}
+              <strong>
+                <a className={styles.murvel_link} href="https://realm.io/">
+                  Realm
+                </a>
+              </strong>{" "}
+              for caching)
+            </li>
+            <li className={styles.list_item}>
+              Uses{" "}
+              <strong>
+                <a
+                  className={styles.murvel_link}
+                  href="https://firebase.google.com/"
+                >
+                  Firebase
+                </a>
+              </strong>{" "}
+              for user interactions
+            </li>
           </ul>
-          <h4>Uses Google Firebase</h4>
-          <h4>Written in Kotlin.</h4>
+          <h4>
+            Written in Kotlin{" "}
+            <a href="https://kotlinlang.org">
+              <Image
+                className={styles.inlineLogo}
+                src={imgKotlin}
+                height="40px"
+                width="40px"
+                alt="Kotlin Logo"
+              />
+            </a>
+          </h4>
           <h4>Made for Android devices</h4>
           <div className={styles.project_links}>
+            <a href="https://github.com/isthisthereallife/MarvellisimoApp/releases/tag/Releases">
+              download apk
+            </a>
             <a href="https://github.com/isthisthereallife/MarvellisimoApp">
               source code
             </a>

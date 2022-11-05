@@ -93,7 +93,7 @@ export default function Webshop() {
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>Mock web shop </h4>
           <span>Features</span>
-          <ul className={styles.list_lefty}>
+        <ul className={styles.list_lefty}>
             <li className={styles.list_item}>External API calls</li>
             <li className={styles.list_item}>Parameterized lookups</li>
             <li className={styles.list_item}>Dynamic page generation</li>
@@ -101,32 +101,34 @@ export default function Webshop() {
             <li className={styles.list_item}>Very generous search algorithm</li>
           </ul>
           <div>
-            Written in{" "}
+            Written in JavaScript with React and Next.js
+          </div>
+          <div>
             <a href="https://www.javascript.com">
               <Image
                 className={styles.inlineLogo}
                 src={imgJS}
-                height="45px"
-                width="45px"
+                height="40px"
+                width="40px"
                 alt="JavaScript logo"
               />
-            </a>{" "}
-            with{" "}
+            </a>
+            {"  "}
             <a href="https://reactjs.org/">
               <Image
                 className={styles.inlineLogo}
                 src={imgReact}
-                height="45px"
-                width="45px"
+                height="40px"
+                width="40px"
                 alt="React Logo"
               />
-            </a>{" "}
-            and{" "}
+            </a>
+            {"  "}
             <a href="https://nextjs.org/">
               <Image
                 className={styles.inlineLogo}
                 src={imgNext}
-                height="45px"
+                height="40px"
                 width="70px"
                 alt="Next.js Logo"
               />

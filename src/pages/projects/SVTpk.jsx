@@ -88,24 +88,25 @@ export default function SVTpk() {
           <span>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
-              Enables downloads from SVT Play
+              <strong>Enables downloads from SVT Play</strong>
             </li>
             <li className={styles.list_item}>Graphical User Interface</li>
             <li className={styles.list_item}>Standalone Java application</li>
-            <li className={styles.list_item}>Fully Portable</li>
+            <li className={styles.list_item}>
+              Fully Portable
+            </li>
           </ul>
+          <div>Written in Java with JavaFX</div>
           <div>
-            Written in
             <a href="https://www.java.com">
               <Image
                 className={styles.inlineLogo}
                 src={imgJava}
-                height="45px"
-                width="45px"
+                height="40px"
+                width="40px"
                 alt="Java logo"
               />
-            </a>{" "}
-            with JavaFX
+            </a>
           </div>
           <div className={styles.project_links}>
             <br />
