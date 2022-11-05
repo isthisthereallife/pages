@@ -74,15 +74,16 @@ export default function SVTpk() {
         onTouchEnd={onTouchEnd}
       >
         <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
-        <div width="680" height="520" className={styles.project_image_div}>
-          <Link href="https://isthisthereallife.github.io/svtpk/">
+        <a href="https://isthisthereallife.github.io/svtpk/">
+          <div width="680" height="520" className={styles.project_image_div}>
             <Image
               className={styles.project_image}
               src={imgSvtpk}
               alt="Screen capture from the program SVTpk"
             />
-          </Link>
-        </div>
+          </div>
+        </a>
+
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <span>Features</span>
           <ul className={styles.list_lefty}>

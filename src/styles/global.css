@@ -65,6 +65,7 @@ a:hover {
   min-height: 84vh;
   min-width: 100vw;
   user-select: none;
+  margin-bottom: 30px;
 }
 
 .main .startpage_button {

@@ -72,8 +72,8 @@ export default function Pokertimer() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <div className={styles.project_image_div}>
-          <Link href="https://acornsfordinner.github.io/pokertimer/">
+        <a href="https://acornsfordinner.github.io/pokertimer/">
+          <div className={styles.project_image_div}>
             <Image
               width="600px"
               height="450px"
@@ -81,8 +81,8 @@ export default function Pokertimer() {
               id={styles.poker_img}
               src={imgPoker}
             />
-          </Link>
-        </div>
+          </div>{" "}
+        </a>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>Poker Timer</h4>
           <span>Features</span>
@@ -103,9 +103,9 @@ export default function Pokertimer() {
             </li>
           </ul>
           <div className={styles.project_links}>
-            <Link href="https://acornsfordinner.github.io/pokertimer/">
+            <a href="https://acornsfordinner.github.io/pokertimer/">
               try it out
-            </Link>
+            </a>
           </div>{" "}
         </div>
       </div>

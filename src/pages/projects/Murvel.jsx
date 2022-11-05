@@ -116,9 +116,9 @@ export default function Murvel() {
           <h4>Written in Kotlin.</h4>
           <h4>Made for Android devices</h4>
           <div className={styles.project_links}>
-            <Link href="https://github.com/isthisthereallife/MarvellisimoApp">
+            <a href="https://github.com/isthisthereallife/MarvellisimoApp">
               source code
-            </Link>
+            </a>
           </div>
         </div>
       </div>

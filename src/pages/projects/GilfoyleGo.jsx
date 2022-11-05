@@ -1,5 +1,4 @@
 import styles from "../../styles/project.module.css";
-import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import imgGilfoyle from "../../../public/images/gilfoyle.png";
@@ -92,31 +91,31 @@ export default function GilfoyleGo() {
           </ul>
           <br />
           <div>
-            <Link href="https://www.java.com">
+            <a href="https://www.java.com">
               <Image src={imgJava} alt="Java" height="40" width="40" />
-            </Link>
-            <Link href="https://spring.io/projects/spring-boot">
+            </a>
+            <a href="https://spring.io/projects/spring-boot">
               <Image src={imgSpring} height="40" width="40" />
-            </Link>
-            <Link href="https://vuejs.org/">
+            </a>
+            <a href="https://vuejs.org/">
               <Image src={imgVue} height="40" width="40" />
-            </Link>
-            <Link href="https://getbootstrap.com/">
+            </a>
+            <a href="https://getbootstrap.com/">
               <Image src={imgBootstrap} height="40" width="40" />
-            </Link>
-            <Link href="https://www.mysql.com/">
+            </a>
+            <a href="https://www.mysql.com/">
               <Image src={imgMysql} height="40" width="40" />
-            </Link>
-            <Link href="https://www.w3schools.com/html/">
+            </a>
+            <a href="https://www.w3schools.com/html/">
               <Image src={imgHtml5} height="40" width="40" />
-            </Link>
+            </a>
           </div>
 
           <br />
           <div className={styles.project_links}>
-            <Link href="https://github.com/isthisthereallife/Hotel-Booking-App">
+            <a href="https://github.com/isthisthereallife/Hotel-Booking-App">
               source code
-            </Link>
+            </a>
           </div>
         </div>
       </div>

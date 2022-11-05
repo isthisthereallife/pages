@@ -81,17 +81,15 @@ export default function Webshop() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        {/* <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
-         */}
-        <div width="680" height="520" className={styles.project_image_div}>
-          <Link href="https://isthisthereallife.github.io/Webshop">
+        <a href="https://isthisthereallife.github.io/Webshop">
+          <div width="680" height="520" className={styles.project_image_div}>
             <Image
               className={styles.project_image}
               src={imgWebshop}
               alt="Screen capture from the web shop"
             />
-          </Link>
-        </div>
+          </div>
+        </a>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>Mock web shop </h4>
           <span>Features</span>
@@ -104,7 +102,7 @@ export default function Webshop() {
           </ul>
           <div>
             Written in{" "}
-            <Link href="https://www.javascript.com">
+            <a href="https://www.javascript.com">
               <Image
                 className={styles.inlineLogo}
                 src={imgJS}
@@ -112,9 +110,9 @@ export default function Webshop() {
                 width="45px"
                 alt="JavaScript logo"
               />
-            </Link>{" "}
+            </a>{" "}
             with{" "}
-            <Link href="https://reactjs.org/">
+            <a href="https://reactjs.org/">
               <Image
                 className={styles.inlineLogo}
                 src={imgReact}
@@ -122,9 +120,9 @@ export default function Webshop() {
                 width="45px"
                 alt="React Logo"
               />
-            </Link>{" "}
+            </a>{" "}
             and{" "}
-            <Link href="https://nextjs.org/">
+            <a href="https://nextjs.org/">
               <Image
                 className={styles.inlineLogo}
                 src={imgNext}
@@ -132,7 +130,7 @@ export default function Webshop() {
                 width="70px"
                 alt="Next.js Logo"
               />
-            </Link>
+            </a>
           </div>
           <div className={styles.project_links}>
             <br />

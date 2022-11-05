@@ -23,7 +23,7 @@ export default function Footer() {
     case 10:
       left = (
         <Link href="/projects/Audioplayer">
-          <FaArrowLeft className={styles.icon} />
+          <FaArrowLeft className={styles.icon} alt="Arrow left"/>
         </Link>
       );
       right = (

@@ -14,12 +14,12 @@ export default function About() {
       <div className="main">
         <div className={styles.main}>
           <div className={styles.box}>
-            <Link href="https://github.com/isthisthereallife">Github</Link>
+            <a href="https://github.com/isthisthereallife">Github</a>
           </div>
           <div className={styles.box}>
-            <Link href="https://www.linkedin.com/in/magnus-pettersson-467ab823a/">
+            <a href="https://www.linkedin.com/in/magnus-pettersson-467ab823a/">
               Linkedin
-            </Link>
+            </a>
           </div>
         </div>
       </div>

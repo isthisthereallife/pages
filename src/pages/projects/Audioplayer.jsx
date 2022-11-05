@@ -80,7 +80,6 @@ export default function Audioplayer() {
         </a>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>A somewhat responsive audio player made with jQuery</h4>
-
           Features
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
@@ -99,11 +98,10 @@ export default function Audioplayer() {
               instead
             </li>
           </ul>
-
           <div className={styles.project_links}>
-            <Link href="https://acornsfordinner.github.io/musikspelare/">
+            <a href="https://acornsfordinner.github.io/musikspelare/">
               try it out
-            </Link>
+            </a>
             <br />
           </div>
         </div>
