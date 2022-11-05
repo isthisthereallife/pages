@@ -81,7 +81,7 @@ export default function Pokertimer() {
               id={styles.poker_img}
               src={imgPoker}
             />
-          </div>{" "}
+          </div>
         </a>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>Poker Timer</h4>
@@ -106,7 +106,7 @@ export default function Pokertimer() {
             <a href="https://acornsfordinner.github.io/pokertimer/">
               try it out
             </a>
-          </div>{" "}
+          </div>
         </div>
       </div>
     </>

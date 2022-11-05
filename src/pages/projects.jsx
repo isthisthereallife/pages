@@ -95,7 +95,7 @@ export default function Projects() {
                   <h4 className={styles.title}>
                     Poker Timer <br />
                     <br />
-                    Web App
+                    Useful tool
                   </h4>
                 </div>
               </button>
