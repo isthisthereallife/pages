@@ -88,7 +88,7 @@ export default function GilfoyleGo() {
         </div>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>Mock hotel booking app.</h4>
-          <span>Features</span>
+          <span id={styles.features_pill}>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>Spring Boot Backend</li>
             <li className={styles.list_item}>Vue Frontend</li>

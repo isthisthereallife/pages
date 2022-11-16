@@ -98,7 +98,7 @@ export default function Murvel() {
           Play along whilst watching a film!
           <br />
           <br />
-          Features
+          <span id={styles.features_pill}>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
               best domain name = <a href="http://tropes.bingo">tropes.bingo</a>

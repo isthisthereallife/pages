@@ -83,7 +83,7 @@ export default function Audioplayer() {
         </a>
         <div className={styles.infoText} id={styles.audioplayer_info}>
           <h4>A somewhat responsive audio player made with jQuery</h4>
-          Features
+          <span id={styles.features_pill}>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
               An example of my humble beginnings

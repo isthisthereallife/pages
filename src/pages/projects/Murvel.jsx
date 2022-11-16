@@ -94,7 +94,7 @@ export default function Murvel() {
           in the palm of your hand.
           <br />
           <br />
-          Features
+          <span id={styles.features_pill}>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
               Look up any Marvel Character or Comic Book

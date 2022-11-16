@@ -88,7 +88,7 @@ export default function Pokertimer() {
         </a>
         <div className={styles.infoText} id={styles.pokertimer_info}>
           <h4>Poker Timer</h4>
-          <span>Features</span>
+          <span id={styles.features_pill}>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>Keep track of blinds</li>
             <li className={styles.list_item}>

@@ -93,7 +93,7 @@ export default function SVTpk() {
 
         <div className={styles.infoText} id={styles.svtpk_info}>
           <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
-          <span>Features</span>
+          <span id={styles.features_pill}>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
               <strong>Enables downloads from SVT Play</strong>

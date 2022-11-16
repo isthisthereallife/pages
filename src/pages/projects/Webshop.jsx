@@ -100,7 +100,7 @@ export default function Webshop() {
         </a>
         <div className={styles.infoText} id={styles.webshop_info}>
           <h4>Mock web shop </h4>
-          <span>Features</span>
+          <span id={styles.features_pill}>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>External API calls</li>
             <li className={styles.list_item}>Parameterized lookups</li>
