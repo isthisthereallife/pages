@@ -103,17 +103,19 @@ export default function Murvel() {
             <li className={styles.list_item}>
               best domain name = <a href="http://tropes.bingo">tropes.bingo</a>
             </li>
-            <li className={styles.list_item}>Look up work (i.e. a film)</li>
+            <li className={styles.list_item}>
+              Look up work (i.e. a film, a book)
+            </li>
             <li className={styles.list_item}>Generate a bingo board</li>
             <li className={styles.list_item}>
               Watch/Read/Think about said thing
             </li>
             <li className={styles.list_item}>
-              Tick the box when what is portrayed in said box happens in the
-              thing you're watching/reading/thinking about
+              Tick the box when you feel that what is portrayed in said box
+              happens in the thing you're watching/reading/thinking about
             </li>
             <li className={styles.list_item}>
-              It's bingo, you know how it's done.
+              Shout <em>*BINGO*</em> when you win
             </li>
           </ul>
           <h4>Written in Javascript, and some java for the backend</h4>

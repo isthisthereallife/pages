@@ -13,6 +13,7 @@ import Carousel from "react-bootstrap/Carousel";
 import imgPoker from "../../public/images/poker.png";
 import imgMurvel from "../../public/images/murvel2.png";
 import imgWebshop from "../../public/images/webshop.png";
+import imgTropesbingo from "../../public/images/tropes1.png";
 
 import { CREEP_EVENTS } from "../reducers/creepReducer";
 
@@ -72,6 +73,33 @@ function HomePage() {
                   <div>
                     <h5>SVTpk</h5>
                     <p>Privatkopiera från SVT Play</p>
+                  </div>
+                </Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item interval={3000}>
+              <Link
+                href="/projects/TropesBingo"
+                className={styles.carousel_link}
+              >
+                <Image
+                  className={styles.carousel_image}
+                  width="680"
+                  height="520"
+                  src={imgTropesbingo}
+                  variant="top"
+                  alt="Tropes Bingo"
+                />
+              </Link>
+              <Carousel.Caption className={styles.carousel_caption}>
+                <Link
+                  href="/projects/TropesBingo"
+                  className={styles.carousel_link}
+                >
+                  <div>
+                    <h5>Tropes Bingo</h5>
+                    <p>Does what it says on the tin</p>
                   </div>
                 </Link>
               </Carousel.Caption>
