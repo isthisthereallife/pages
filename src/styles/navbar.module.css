@@ -15,7 +15,7 @@
   padding: 8px 0 10px 0;
   top: 0;
   text-shadow: #0a5501 0px 1px 2px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .navbar * {
   display: flex;

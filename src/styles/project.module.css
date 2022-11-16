@@ -24,11 +24,10 @@
 }
 .title {
   align-self: center;
-  background-color: rgb(255, 255, 255, 0.7);
   border-radius: 10px;
-  padding: 5px;
+  padding: 3px;
   width: fit-content;
-  margin: 8px;
+  margin: 6px;
 }
 
 .main_image_a {
@@ -46,6 +45,7 @@
   margin-top: 10px;
   background-color: rgb(255, 255, 255, 0.85);
   border-radius: 5px;
+  border: 1px solid rgb(99, 99, 99);
 }
 
 .project_image {
@@ -75,6 +75,7 @@
 .project_links a {
   color: #01438e;
   text-decoration: none;
+  text-shadow: rgb(89, 118, 150) 1px 1px 0px;
 }
 .playBtn {
   cursor: pointer;
@@ -90,11 +91,14 @@
   margin-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px;
-  color: white;
+  color: black;
   width: 60vw;
   /*max-height: 450px;*/
   border-radius: 10px;
   font-size: 1.1em;
+  background-color: rgb(255, 255, 255, 0.85);
+  border: 1px solid rgb(99, 99, 99);
+  text-shadow: rgb(98, 98, 98) 8px 8px 8px;
 
   display: flex;
   flex-direction: column;
@@ -114,27 +118,48 @@
   text-shadow: rgb(255, 255, 255) 0px 1px 2px;
 }
 
+.project_image_div#svtpk_div {
+  border: 1px solid rgb(99, 99, 99);
+}
 .project_image_div#murvel_div {
   background-color: rgb(231, 0, 0, 0.85);
 }
 .project_image_div#webshop_div {
   background-color: rgb(239, 199, 140, 0.85);
 }
+.project_image_div#gilfoylego_div {
+  border: 1px solid black;
+}
 .project_image_div#pokertimer_div {
   background-color: rgb(44, 34, 14, 0.85);
 }
+.project_image_div#tropesbingo_div {
+  border: 1px solid black;
+}
 .project_image_div#audioplayer_div {
-  background: linear-gradient(to right, rgb(218, 83, 35), rgb(243, 83, 35));
+  background: linear-gradient(
+    to right,
+    rgb(218, 83, 35, 0.85),
+    rgb(243, 83, 35, 0.85)
+  );
+}
+#svtpk_info {
+  border: 1px solid rgb(99, 99, 99);
+  text-shadow: rgb(98, 98, 98) 8px 8px 8px;
 }
 #murvelInfo {
   background-color: rgb(231, 0, 0, 0.85);
+  color: white;
+  text-shadow: rgb(0, 0, 0) 8px 8px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #gilfoyleInfo {
   background-color: rgb(255, 255, 255, 0.7);
   color: black;
+  border: 1px solid black;
 }
 #webshop_info {
   background-color: rgb(239, 199, 140, 0.8);
@@ -142,18 +167,16 @@
 }
 #pokertimer_info {
   background-color: rgb(44, 34, 14, 0.85);
+  color: white;
 }
 #tropesbingo_info {
   background-color: rgb(255, 255, 255, 0.85);
   color: black;
+  border: 1px solid black;
 }
 
 #audioplayer_info {
-  background: linear-gradient(
-    to right,
-    rgb(243, 83, 35, 0.85),
-    rgb(218, 83, 35, 0.85)
-  );
+  background: linear-gradient(rgb(243, 124, 44), rgb(218, 83, 35, 0.85));
 
   color: black;
 }
@@ -181,4 +204,11 @@
   .infoText {
     margin-bottom: 50px;
   }
+}
+
+#tropesbingo_info {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#tropesbingo_info ul li {
+  font-style: italic;
 }

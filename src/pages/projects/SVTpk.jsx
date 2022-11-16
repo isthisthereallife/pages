@@ -91,7 +91,7 @@ export default function SVTpk() {
           </div>
         </a>
 
-        <div className={styles.infoText} id={styles.gilfoyleInfo}>
+        <div className={styles.infoText} id={styles.svtpk_info}>
           <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
           <span>Features</span>
           <ul className={styles.list_lefty}>

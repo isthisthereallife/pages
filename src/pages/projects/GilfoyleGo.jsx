@@ -78,7 +78,12 @@ export default function GilfoyleGo() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <div className={styles.project_image_div} width="600" height="400">
+        <div
+          className={styles.project_image_div}
+          width="600"
+          height="400"
+          id={styles.gilfoylego_div}
+        >
           <Image className={styles.project_image} src={imgGilfoyle} />
         </div>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>

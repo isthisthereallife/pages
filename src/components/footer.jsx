@@ -94,7 +94,7 @@ export default function Footer() {
       break;
     case 16:
       left = (
-        <Link href="/projects/Audioplayer">
+        <Link href="/projects/GilfoyleGo">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );

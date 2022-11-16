@@ -82,7 +82,7 @@ export default function Murvel() {
         onTouchEnd={onTouchEnd}
       >
         <a href="http://tropes.bingo" className={styles.main_image_a}>
-          <div className={styles.project_image_div}>
+          <div className={styles.project_image_div} id={styles.tropesbingo_div}>
             <Image
               className={styles.project_image}
               src={tropesImg4}
