@@ -48,17 +48,17 @@ export default function Murvel() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/GilfoyleGo");
-    } else if (isRightSwipe) {
       router.push("/projects/Webshop");
+    } else if (isRightSwipe) {
+      router.push("/projects/TropesBingo");
     }
   };
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/GilfoyleGo");
-      } else if (e.code === "ArrowLeft") {
         router.push("/projects/Webshop");
+      } else if (e.code === "ArrowLeft") {
+        router.push("/projects/TropesBingo");
       }
     };
     document.addEventListener("keydown", onKeyUp);
@@ -78,7 +78,7 @@ export default function Murvel() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <div className={styles.project_image_div}>
+        <div className={styles.project_image_div} id={styles.murvel_div}>
           <Image
             className={styles.project_image}
             src={murvelGif}

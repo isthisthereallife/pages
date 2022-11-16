@@ -13,6 +13,9 @@
 #btnSvtpk {
   background-image: url(../../public/images/svtpk.png);
 }
+#btn_tropesbingo {
+  background-image: url(../../public/images/tropes_square.png);
+}
 #btnWebshop {
   background-image: url(../../public/images/webshop.png);
 }
@@ -119,6 +122,9 @@
   #btnSvtpk {
     background-image: url(../../public/images/svtpk.png);
   }
+  #btn_tropesbingo {
+    background-image: url(../../public/images/tropes_square.png);
+  }
   #btnWebshop {
     background-image: url(../../public/images/webshop.png);
   }
@@ -199,33 +205,39 @@
   }
 
   #btnSvtpk:hover .titleCard {
-    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.8);
+    visibility: visible;
+    border-radius: 10px;
+  }
+
+  #btn_tropesbingo:hover .titleCard {
+    background-color: rgba(255, 255, 255, 0.905);
     visibility: visible;
     border-radius: 10px;
   }
   #btnWebshop:hover .titleCard {
-    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.8);
     visibility: visible;
     border-radius: 10px;
   }
   #btnMurvel:hover .titleCard {
-    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.85);
     visibility: visible;
     border-radius: 10px;
   }
 
   #btnGilf:hover .titleCard {
-    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.8);
     visibility: visible;
     border-radius: 10px;
   }
   #btnPoker:hover .titleCard {
-    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.8);
     visibility: visible;
     border-radius: 10px;
   }
   #btnAudioplayer:hover .titleCard {
-    background-color: rgba(255, 255, 255, 0.505);
+    background-color: rgba(255, 255, 255, 0.8);
     visibility: visible;
     border-radius: 10px;
   }

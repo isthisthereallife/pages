@@ -23,11 +23,11 @@ export default function Footer() {
     case 10:
       left = (
         <Link href="/projects/Audioplayer">
-          <FaArrowLeft className={styles.icon} alt="Arrow left"/>
+          <FaArrowLeft className={styles.icon} alt="Arrow left" />
         </Link>
       );
       right = (
-        <Link href="/projects/Webshop">
+        <Link href="/projects/TropesBingo">
           <FaArrowRight className={styles.icon} />
         </Link>
       );
@@ -46,12 +46,12 @@ export default function Footer() {
       break;
     case 12:
       left = (
-        <Link href="/projects/Webshop">
+        <Link href="/projects/TropesBingo">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );
       right = (
-        <Link href="/projects/GilfoyleGo">
+        <Link href="/projects/Webshop">
           <FaArrowRight className={styles.icon} />
         </Link>
       );
@@ -70,7 +70,19 @@ export default function Footer() {
       break;
     case 14:
       left = (
+        <Link href="/projects/Webshop">
+          <FaArrowLeft className={styles.icon} />
+        </Link>
+      );
+      right = (
         <Link href="/projects/GilfoyleGo">
+          <FaArrowRight className={styles.icon} />
+        </Link>
+      );
+      break;
+    case 15:
+      left = (
+        <Link href="/projects/Pokertimer">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );
@@ -80,9 +92,9 @@ export default function Footer() {
         </Link>
       );
       break;
-    case 15:
+    case 16:
       left = (
-        <Link href="/projects/Pokertimer">
+        <Link href="/projects/Audioplayer">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );

@@ -15,10 +15,10 @@ export default function Webshop() {
   const creep = useCreep();
 
   useEffect(() => {
-    if (creep.creep.currentIndex !== 11) {
+    if (creep.creep.currentIndex !== 13) {
       creep.creepDispatch({
         payload: {
-          currentIndex: 11,
+          currentIndex: 13,
           currentPage: "Webshop",
           currentPageType: "project",
         },
@@ -50,17 +50,17 @@ export default function Webshop() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/Murvel");
+      router.push("/projects/Pokertimer");
     } else if (isRightSwipe) {
-      router.push("/projects/SVTpk");
+      router.push("/projects/Murvel");
     }
   };
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Murvel");
+        router.push("/projects/Pokertimer");
       } else if (e.code === "ArrowLeft") {
-        router.push("/projects/SVTpk");
+        router.push("/projects/Murvel");
       }
     };
     document.addEventListener("keydown", onKeyUp);
@@ -81,8 +81,16 @@ export default function Webshop() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <a href="https://isthisthereallife.github.io/Webshop">
-          <div width="680" height="520" className={styles.project_image_div}>
+        <a
+          href="https://isthisthereallife.github.io/Webshop"
+          className={styles.main_image_a}
+        >
+          <div
+            width="680"
+            height="520"
+            className={styles.project_image_div}
+            id={styles.webshop_div}
+          >
             <Image
               className={styles.project_image}
               src={imgWebshop}
@@ -90,19 +98,17 @@ export default function Webshop() {
             />
           </div>
         </a>
-        <div className={styles.infoText} id={styles.gilfoyleInfo}>
+        <div className={styles.infoText} id={styles.webshop_info}>
           <h4>Mock web shop </h4>
           <span>Features</span>
-        <ul className={styles.list_lefty}>
+          <ul className={styles.list_lefty}>
             <li className={styles.list_item}>External API calls</li>
             <li className={styles.list_item}>Parameterized lookups</li>
             <li className={styles.list_item}>Dynamic page generation</li>
             <li className={styles.list_item}>Context-based shopping cart</li>
             <li className={styles.list_item}>Very generous search algorithm</li>
           </ul>
-          <div>
-            Written in JavaScript with React and Next.js
-          </div>
+          <div>Written in JavaScript with React and Next.js</div>
           <div>
             <a href="https://www.javascript.com">
               <Image

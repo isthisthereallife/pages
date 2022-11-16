@@ -31,6 +31,10 @@
   margin: 8px;
 }
 
+.main_image_a {
+  display: flex;
+  justify-content: center;
+}
 .project_image_div {
   display: flex;
   flex-direction: column;
@@ -38,9 +42,10 @@
   align-items: center;
   object-fit: contain;
   max-height: 60vh;
-  width: auto;
-  max-width: 70vw;
+  width: 60vw;
   margin-top: 10px;
+  background-color: rgb(255, 255, 255, 0.85);
+  border-radius: 5px;
 }
 
 .project_image {
@@ -86,11 +91,14 @@
   margin-left: 5px;
   margin-right: 5px;
   color: white;
-  width: fit-content;
-  max-width: 680px;
+  width: 60vw;
   /*max-height: 450px;*/
   border-radius: 10px;
   font-size: 1.1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .list_lefty {
@@ -104,11 +112,22 @@
 .murvel_link {
   color: rgb(0, 0, 0);
   text-shadow: rgb(255, 255, 255) 0px 1px 2px;
-
 }
 
+.project_image_div#murvel_div {
+  background-color: rgb(231, 0, 0, 0.85);
+}
+.project_image_div#webshop_div {
+  background-color: rgb(239, 199, 140, 0.85);
+}
+.project_image_div#pokertimer_div {
+  background-color: rgb(44, 34, 14, 0.85);
+}
+.project_image_div#audioplayer_div {
+  background: linear-gradient(to right, rgb(218, 83, 35), rgb(243, 83, 35));
+}
 #murvelInfo {
-  background-color: rgb(231, 0, 0, 0.7);
+  background-color: rgb(231, 0, 0, 0.85);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,29 +135,43 @@
 #gilfoyleInfo {
   background-color: rgb(255, 255, 255, 0.7);
   color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+#webshop_info {
+  background-color: rgb(239, 199, 140, 0.8);
+  color: black;
+}
+#pokertimer_info {
+  background-color: rgb(44, 34, 14, 0.85);
+}
+#tropesbingo_info {
+  background-color: rgb(255, 255, 255, 0.85);
+  color: black;
 }
 
-#audioplayerInfo {
-  background-color: rgb(255, 255, 255, 0.7);
+#audioplayer_info {
+  background: linear-gradient(
+    to right,
+    rgb(243, 83, 35, 0.85),
+    rgb(218, 83, 35, 0.85)
+  );
+
   color: black;
 }
 /* Mobile --------------------------------------------------------------------------------*/
-@media (max-width: 699) {
+@media (max-width: 699px) {
   .project_image_div {
-    max-width: 90%;
-    width: 100%;
-    height: auto;
+    background-color: none;
+    max-width: none;
+    width: 96%;
+    max-height: 60vh;
   }
   .project_image {
     max-width: 80%;
   }
   .infoText {
     padding: 0;
-    width: 80%;
-    max-width: 80%;
+    width: 96%;
+    max-width: 96%;
   }
   .project_links {
     max-width: 80%;

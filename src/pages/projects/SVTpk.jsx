@@ -42,7 +42,7 @@ export default function SVTpk() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/Webshop");
+      router.push("/projects/TropesBingo");
     } else if (isRightSwipe) {
       router.push("/projects/Audioplayer");
     }
@@ -50,7 +50,7 @@ export default function SVTpk() {
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Webshop");
+        router.push("/projects/TropesBingo");
       } else if (e.code === "ArrowLeft") {
         router.push("/projects/Audioplayer");
       }
@@ -73,9 +73,16 @@ export default function SVTpk() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
-        <a href="https://isthisthereallife.github.io/svtpk/">
-          <div width="680" height="520" className={styles.project_image_div}>
+        <a
+          href="https://isthisthereallife.github.io/svtpk/"
+          className={styles.main_image_a}
+        >
+          <div
+            width="680"
+            height="520"
+            className={styles.project_image_div}
+            id={styles.svtpk_div}
+          >
             <Image
               className={styles.project_image}
               src={imgSvtpk}
@@ -85,6 +92,7 @@ export default function SVTpk() {
         </a>
 
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
+          <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
           <span>Features</span>
           <ul className={styles.list_lefty}>
             <li className={styles.list_item}>
@@ -92,9 +100,7 @@ export default function SVTpk() {
             </li>
             <li className={styles.list_item}>Graphical User Interface</li>
             <li className={styles.list_item}>Standalone Java application</li>
-            <li className={styles.list_item}>
-              Fully Portable
-            </li>
+            <li className={styles.list_item}>Fully Portable</li>
           </ul>
           <div>Written in Java with JavaFX</div>
           <div>

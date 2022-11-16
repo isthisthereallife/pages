@@ -48,6 +48,24 @@ export default function Projects() {
               </button>
             </Link>
           </div>
+          <div className={styles.item}>
+            <Link href="/projects/TropesBingo">
+              <button
+                className={styles.itemButton}
+                id={styles.btn_tropesbingo}
+                variant="outline-primary"
+              >
+                <div className={styles.titleCard}>
+                  <h4 className={styles.title}>
+                    Tropes Bingo
+                    <br />
+                    <br />
+                    Mobile game
+                  </h4>
+                </div>
+              </button>
+            </Link>
+          </div>
 
           <div className={styles.item}>
             <Link href="/projects/Webshop">
@@ -77,18 +95,6 @@ export default function Projects() {
           </div>
 
           <div className={styles.item}>
-            <Link href="/projects/GilfoyleGo">
-              <button className={styles.itemButton} id={styles.btnGilf}>
-                <div className={styles.titleCard}>
-                  <h4 className={styles.title}>
-                    Hotel booking <br />
-                    <br /> Web App
-                  </h4>
-                </div>
-              </button>
-            </Link>
-          </div>
-          <div className={styles.item}>
             <Link href="/projects/Pokertimer">
               <button className={styles.itemButton} id={styles.btnPoker}>
                 <div className={styles.titleCard}>
@@ -101,6 +107,20 @@ export default function Projects() {
               </button>
             </Link>
           </div>
+
+          <div className={styles.item}>
+            <Link href="/projects/GilfoyleGo">
+              <button className={styles.itemButton} id={styles.btnGilf}>
+                <div className={styles.titleCard}>
+                  <h4 className={styles.title}>
+                    Hotel booking <br />
+                    <br /> Web App
+                  </h4>
+                </div>
+              </button>
+            </Link>
+          </div>
+
           <div className={styles.item}>
             <Link href="/projects/Audioplayer">
               <button className={styles.itemButton} id={styles.btnAudioplayer}>

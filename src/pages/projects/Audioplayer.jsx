@@ -11,10 +11,10 @@ import Head from "next/head";
 export default function Audioplayer() {
   let creep = useCreep();
   useEffect(() => {
-    if (creep.creep.currentIndex !== 15) {
+    if (creep.creep.currentIndex !== 16) {
       creep.creepDispatch({
         payload: {
-          currentIndex: 15,
+          currentIndex: 16,
           currentPage: "Audioplayer",
           currentPageType: "project",
         },
@@ -43,7 +43,7 @@ export default function Audioplayer() {
     if (isLeftSwipe) {
       router.push("/projects/SVTpk");
     } else if (isRightSwipe) {
-      router.push("/projects/Pokertimer");
+      router.push("/projects/GilfoyleGo");
     }
   };
 
@@ -52,7 +52,7 @@ export default function Audioplayer() {
       if (e.code === "ArrowRight") {
         router.push("/projects/SVTpk");
       } else if (e.code === "ArrowLeft") {
-        router.push("/projects/Pokertimer");
+        router.push("/projects/GilfoyleGo");
       }
     };
     document.addEventListener("keydown", onKeyUp);
@@ -73,12 +73,15 @@ export default function Audioplayer() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <a href="https://acornsfordinner.github.io/musikspelare/">
-          <div className={styles.project_image_div}>
+        <a
+          href="https://acornsfordinner.github.io/musikspelare/"
+          className={styles.main_image_a}
+        >
+          <div className={styles.project_image_div} id={styles.audioplayer_div}>
             <Image className={styles.project_image} src={projectImage} />
           </div>
         </a>
-        <div className={styles.infoText} id={styles.gilfoyleInfo}>
+        <div className={styles.infoText} id={styles.audioplayer_info}>
           <h4>A somewhat responsive audio player made with jQuery</h4>
           Features
           <ul className={styles.list_lefty}>

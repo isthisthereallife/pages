@@ -41,17 +41,17 @@ export default function Pokertimer() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/Audioplayer");
-    } else if (isRightSwipe) {
       router.push("/projects/GilfoyleGo");
+    } else if (isRightSwipe) {
+      router.push("/projects/Webshop");
     }
   };
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Audioplayer");
-      } else if (e.code === "ArrowLeft") {
         router.push("/projects/GilfoyleGo");
+      } else if (e.code === "ArrowLeft") {
+        router.push("/projects/Webshop");
       }
     };
     document.addEventListener("keydown", onKeyUp);
@@ -72,8 +72,11 @@ export default function Pokertimer() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <a href="https://acornsfordinner.github.io/pokertimer/">
-          <div className={styles.project_image_div}>
+        <a
+          href="https://acornsfordinner.github.io/pokertimer/"
+          className={styles.main_image_a}
+        >
+          <div className={styles.project_image_div} id={styles.pokertimer_div}>
             <Image
               width="600px"
               height="450px"
@@ -83,7 +86,7 @@ export default function Pokertimer() {
             />
           </div>
         </a>
-        <div className={styles.infoText} id={styles.gilfoyleInfo}>
+        <div className={styles.infoText} id={styles.pokertimer_info}>
           <h4>Poker Timer</h4>
           <span>Features</span>
           <ul className={styles.list_lefty}>

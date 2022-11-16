@@ -16,10 +16,10 @@ import Head from "next/head";
 export default function GilfoyleGo() {
   const creep = useCreep();
   useEffect(() => {
-    if (creep.creep.currentIndex !== 13) {
+    if (creep.creep.currentIndex !== 15) {
       creep.creepDispatch({
         payload: {
-          currentIndex: 13,
+          currentIndex: 15,
           currentPage: "Gilfoyle Go",
           currentPageType: "project",
         },
@@ -46,18 +46,18 @@ export default function GilfoyleGo() {
     const isRightSwipe = dist < -threshold;
 
     if (isLeftSwipe) {
-      router.push("/projects/Pokertimer");
+      router.push("/projects/Audioplayer");
     } else if (isRightSwipe) {
-      router.push("/projects/Murvel");
+      router.push("/projects/Pokertimer");
     }
   };
 
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Pokertimer");
+        router.push("/projects/Audioplayer");
       } else if (e.code === "ArrowLeft") {
-        router.push("/projects/Murvel");
+        router.push("/projects/Pokertimer");
       }
     };
     document.addEventListener("keydown", onKeyUp);

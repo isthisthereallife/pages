@@ -26,6 +26,7 @@
 .navbar h1 {
   cursor: pointer;
   width: 50%;
+  font-size: 1.5em;
 }
 
 .navbar a {
