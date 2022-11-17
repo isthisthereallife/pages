@@ -132,6 +132,9 @@ export default function Murvel() {
           </h4>
           <div className={styles.project_links}>
             <a href="http://tropes.bingo">play</a>
+            <a href="https://github.com/isthisthereallife/tropes-bingo">
+              source code
+            </a>
           </div>
         </div>
       </div>
