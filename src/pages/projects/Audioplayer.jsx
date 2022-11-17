@@ -61,6 +61,11 @@ export default function Audioplayer() {
     };
   });
 
+  let showFeatures = (e) => {
+    const f = document.getElementById("features");
+    f.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Head>
@@ -83,8 +88,10 @@ export default function Audioplayer() {
         </a>
         <div className={styles.infoText} id={styles.audioplayer_info}>
           <h4>A somewhat responsive audio player made with jQuery</h4>
-          <span id={styles.features_pill}>Features</span>
-          <ul className={styles.list_lefty}>
+          <span id={styles.features_pill} onClick={showFeatures}>
+            Features
+          </span>
+          <ul className={styles.list_lefty} id="features">
             <li className={styles.list_item}>
               An example of my humble beginnings
             </li>

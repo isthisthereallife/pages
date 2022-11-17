@@ -66,6 +66,12 @@ export default function Murvel() {
       document.removeEventListener("keydown", onKeyUp);
     };
   });
+
+  let showFeatures = (e) => {
+    const f = document.getElementById("features");
+    f.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Head>
@@ -94,8 +100,10 @@ export default function Murvel() {
           in the palm of your hand.
           <br />
           <br />
-          <span id={styles.features_pill}>Features</span>
-          <ul className={styles.list_lefty}>
+          <span id={styles.features_pill} onClick={showFeatures}>
+            Features
+          </span>
+          <ul className={styles.list_lefty} id="features">
             <li className={styles.list_item}>
               Look up any Marvel Character or Comic Book
             </li>

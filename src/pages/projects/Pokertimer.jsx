@@ -60,6 +60,11 @@ export default function Pokertimer() {
     };
   });
 
+  let showFeatures = (e) => {
+    const f = document.getElementById("features");
+    f.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Head>
@@ -88,8 +93,10 @@ export default function Pokertimer() {
         </a>
         <div className={styles.infoText} id={styles.pokertimer_info}>
           <h4>Poker Timer</h4>
-          <span id={styles.features_pill}>Features</span>
-          <ul className={styles.list_lefty}>
+          <span id={styles.features_pill} onClick={showFeatures}>
+            Features
+          </span>
+          <ul className={styles.list_lefty} id="features">
             <li className={styles.list_item}>Keep track of blinds</li>
             <li className={styles.list_item}>
               Calculate winnings based on nr of players

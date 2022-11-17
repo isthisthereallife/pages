@@ -60,6 +60,10 @@ export default function SVTpk() {
       document.removeEventListener("keydown", onKeyUp);
     };
   });
+  let showFeatures = (e) => {
+    const f = document.getElementById("features");
+    f.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -93,8 +97,10 @@ export default function SVTpk() {
 
         <div className={styles.infoText} id={styles.svtpk_info}>
           <h2 className={styles.title}>Privatkopiera från SVT Play</h2>
-          <span id={styles.features_pill}>Features</span>
-          <ul className={styles.list_lefty}>
+          <span id={styles.features_pill} onClick={showFeatures}>
+            Features
+          </span>
+          <ul className={styles.list_lefty} id="features">
             <li className={styles.list_item}>
               <strong>Enables downloads from SVT Play</strong>
             </li>

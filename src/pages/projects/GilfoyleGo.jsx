@@ -66,6 +66,11 @@ export default function GilfoyleGo() {
     };
   });
 
+  let showFeatures = (e) => {
+    const f = document.getElementById("features");
+    f.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Head>
@@ -88,8 +93,10 @@ export default function GilfoyleGo() {
         </div>
         <div className={styles.infoText} id={styles.gilfoyleInfo}>
           <h4>Mock hotel booking app.</h4>
-          <span id={styles.features_pill}>Features</span>
-          <ul className={styles.list_lefty}>
+          <span id={styles.features_pill} onClick={showFeatures}>
+            Features
+          </span>
+          <ul className={styles.list_lefty} id="features">
             <li className={styles.list_item}>Spring Boot Backend</li>
             <li className={styles.list_item}>Vue Frontend</li>
             <li className={styles.list_item}>MySQL Database</li>

@@ -69,6 +69,12 @@ export default function Murvel() {
       document.removeEventListener("keydown", onKeyUp);
     };
   });
+
+  let showFeatures = (e) => {
+    const f = document.getElementById("features");
+    f.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Head>
@@ -98,8 +104,10 @@ export default function Murvel() {
           Play along whilst watching a film!
           <br />
           <br />
-          <span id={styles.features_pill}>Features</span>
-          <ul className={styles.list_lefty}>
+          <span id={styles.features_pill} onClick={showFeatures}>
+            Features
+          </span>
+          <ul className={styles.list_lefty} id="features">
             <li className={styles.list_item}>
               best domain name = <a href="http://tropes.bingo">tropes.bingo</a>
             </li>
