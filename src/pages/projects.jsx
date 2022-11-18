@@ -41,8 +41,8 @@ export default function Projects() {
               >
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    SVTpk <br />
-                    <br /> Privatkopiera från SVT
+                    <strong>SVTpk</strong> <br />
+                    <br /> <i>Privatkopiera från SVT Play</i>
                   </h4>
                 </div>
               </button>
@@ -57,10 +57,10 @@ export default function Projects() {
               >
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Tropes Bingo
+                    <strong>Tropes Bingo</strong>
                     <br />
                     <br />
-                    Mobile game
+                    <i>Mobile game</i>
                   </h4>
                 </div>
               </button>
@@ -72,9 +72,9 @@ export default function Projects() {
               <button className={styles.itemButton} id={styles.btnWebshop}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Web shop <br />
+                    <strong>Web shop</strong> <br />
                     <br />
-                    React/Next.js app
+                    <i>React/Next.js app</i>
                   </h4>
                 </div>
               </button>
@@ -86,8 +86,8 @@ export default function Projects() {
               <button className={styles.itemButton} id={styles.btnMurvel}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Murvel <br /> <br />
-                    Android App
+                    <strong>Murvel</strong> <br /> <br />
+                    <i>Android App</i>
                   </h4>
                 </div>
               </button>
@@ -99,9 +99,9 @@ export default function Projects() {
               <button className={styles.itemButton} id={styles.btnPoker}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Poker Timer <br />
+                    <strong>Poker Timer</strong> <br />
                     <br />
-                    Useful tool
+                    <i>Useful tool</i>
                   </h4>
                 </div>
               </button>
@@ -113,8 +113,9 @@ export default function Projects() {
               <button className={styles.itemButton} id={styles.btnGilf}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Hotel booking <br />
-                    <br /> Web App
+                    <strong>Hotel booking</strong> <br />
+                    <br />
+                    <i>Web App</i>
                   </h4>
                 </div>
               </button>
@@ -126,8 +127,8 @@ export default function Projects() {
               <button className={styles.itemButton} id={styles.btnAudioplayer}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    Audio player <br />
-                    <br /> Built with jQuery
+                    <strong>Audio player</strong> <br />
+                    <br /> <i>Built with jQuery</i>
                   </h4>
                 </div>
               </button>
