@@ -97,7 +97,7 @@ export default function GilfoyleGo() {
             Features
           </span>
           <ul className={styles.list_lefty} id="features">
-            <li className={styles.list_item}>Spring Boot Backend</li>
+            <li className={styles.list_item}>Spring Backend</li>
             <li className={styles.list_item}>Vue Frontend</li>
             <li className={styles.list_item}>MySQL Database</li>
           </ul>
@@ -106,7 +106,7 @@ export default function GilfoyleGo() {
             <a href="https://www.java.com">
               <Image src={imgJava} alt="Java" height="40" width="40" />
             </a>
-            <a href="https://spring.io/projects/spring-boot">
+            <a href="https://spring.io/">
               <Image src={imgSpring} height="40" width="40" />
             </a>
             <a href="https://vuejs.org/">

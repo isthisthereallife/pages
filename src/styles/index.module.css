@@ -1,10 +1,5 @@
-.bg {
-  background-image: url(../../public/images/stenar-tall.jpeg);
-  background-position-y: bottom;
-  background-position-x: center;
-  background-size: cover;
-}
 .carousel_main {
+  width: 45vw;
   max-width: 45vw;
 }
 .carousel-inner {
@@ -30,7 +25,13 @@
 }
 .carousel_caption_light,
 .carousel_caption_red {
-  color: white !important;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+.carousel_caption {
+  color: black;
+  background-color: white;
 }
 
 @media (hover: hover) {
@@ -45,10 +46,6 @@
 
 /* MOBILE & TABLET ------------------------ */
 @media (max-width: 1100px) {
-  .bg {
-    background-image: url(../../public/images/stenar-wide.jpeg);
-    background-size: cover;
-  }
   .carousel-control-prev {
     visibility: hidden;
   }
@@ -59,12 +56,14 @@
     margin: 0px;
   }
   .carousel_caption {
-    background-color: rgba(255, 255, 255, 0.784);
+    background-color: rgba(255, 255, 255);
   }
   .carousel_caption_light {
-    background-color: rgb(30, 68, 30, 0.7);
+    background-color: rgb(30, 68, 30);
+    color: white !important;
   }
   .carousel_caption_red {
-    background-color: rgb(255, 0, 0, 0.7);
+    background-color: rgb(255, 0, 0);
+    color: white !important;
   }
 }

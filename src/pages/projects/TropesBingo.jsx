@@ -1,10 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import styles from "../../styles/project.module.css";
-import tropesImg1 from "../../../public/images/tropes_square.png";
-import tropesImg2 from "../../../public/images/tropes_square2.png";
-import tropesImg3 from "../../../public/images/tropes1.png";
+import imgJS from "../../../public/images/javascript.png";
+import imgSpring from "../../../public/images/spring.png";
+import imgDocker from "../../../public/images/docker.png";
+import imgNginx from "../../../public/images/nginx.png";
+
 import tropesImg4 from "../../../public/images/tropes2.png";
 
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
@@ -119,14 +120,56 @@ export default function Murvel() {
               Watch/Read/Think about said thing
             </li>
             <li className={styles.list_item}>
-              Tick the box when you feel that what is portrayed in said box
-              happens in the thing you're watching/reading/thinking about
+              Tick boxes when applicable
             </li>
             <li className={styles.list_item}>
               Shout <em>*BINGO*</em> when you win
             </li>
           </ul>
-          <h4>Written in Javascript, and some java for the backend</h4>
+          <h4>Written in Javascript. Spring backend.</h4>
+          <h4>Running on an Nginx server, in a Docker container.</h4>
+          <div>
+            <a href="https://www.javascript.com">
+              <Image
+                className={styles.inlineLogo}
+                src={imgJS}
+                height="40px"
+                width="40px"
+                alt="JavaScript logo"
+              />
+            </a>
+            {"  "}
+
+            <a href="https://www.spring.io">
+              <Image
+                className={styles.inlineLogo}
+                src={imgSpring}
+                height="40px"
+                width="40px"
+                alt="Spring logo"
+              />
+            </a>
+            {"  "}
+            <a href="https://www.nginx.org">
+              <Image
+                className={styles.inlineLogo}
+                src={imgNginx}
+                height="40px"
+                width="40px"
+                alt="Nginx logo"
+              />
+            </a>
+            {"  "}
+            <a href="https://www.docker.com">
+              <Image
+                className={styles.inlineLogo}
+                src={imgDocker}
+                height="40px"
+                width="40px"
+                alt="Docker logo"
+              />
+            </a>
+          </div>
           <h4>
             <strong>Made for Mobile devices</strong>
           </h4>

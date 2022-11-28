@@ -1,6 +1,7 @@
 :root {
   --dark_green: #1e441e;
   --nav_green: #053d03;
+  --grey_green: #3a433a;
 }
 html,
 body {
@@ -12,16 +13,9 @@ body {
 
   line-height: 1.6;
   font-size: 18px;
-  min-height: 100vh;
-  max-width: 100vw;
 }
 body {
-  background-image: url(../../public/images/stenar-tall.jpeg);
-  background-position-y: bottom;
-  background-position-x: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: var(--nav_green);
+  background-color: var(--grey_green) !important;
 }
 .h1,
 .h2,
@@ -73,6 +67,7 @@ a:hover {
 
 .main .startpage_button {
   height: 20%;
+  width: 100%;
   margin: 2px;
   background-color: #2a7221;
   color: white;
