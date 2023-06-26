@@ -78,7 +78,7 @@ export default function SVTpk() {
         onTouchEnd={onTouchEnd}
       >
         <a
-          href="https://isthisthereallife.github.io/svtpk/"
+          href="https://svtpk.se"
           className={styles.main_image_a}
         >
           <div
@@ -122,7 +122,7 @@ export default function SVTpk() {
           </div>
           <div className={styles.project_links}>
             <br />
-            <a href="https://isthisthereallife.github.io/svtpk/">download</a>
+            <a href="https://svtpk.se">download</a>
             <br />
             <a href="https://github.com/isthisthereallife/svtpk">source code</a>
           </div>

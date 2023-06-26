@@ -4,7 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/index.module.css";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 import { FaHouseUser, FaLockOpen, FaLowVision } from "react-icons/fa";
 import useCreep from "../lib/hooks/useCreep";
 import imgSvtpk from "../../public/images/svtpk.png";
