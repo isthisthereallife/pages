@@ -78,7 +78,7 @@ export default function Pokertimer() {
         onTouchEnd={onTouchEnd}
       >
         <a
-          href="https://acornsfordinner.github.io/pokertimer/"
+          href="https://tornetspoker.org"
           className={styles.main_image_a}
         >
           <div className={styles.project_image_div} id={styles.pokertimer_div}>
@@ -105,16 +105,14 @@ export default function Pokertimer() {
             <li className={styles.list_item}>Breaks included!</li>
 
             <li className={styles.list_item}>Hilarious sound effects</li>
+            
             <li className={styles.list_item}>
-              Press F11 & CTRL+scroll to resize
-            </li>
-            <li className={styles.list_item}>
-              Don't even try using a small screen
+              Responsive design
             </li>
           </ul>
           <div className={styles.project_links}>
-            <a href="https://acornsfordinner.github.io/pokertimer/">
-              try it out
+            <a href="https://tornetspoker.org">
+              Try it out
             </a>
           </div>
         </div>
