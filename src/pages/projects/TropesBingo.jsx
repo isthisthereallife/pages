@@ -79,7 +79,7 @@ export default function Murvel() {
   return (
     <>
       <Head>
-        <title>Tropes Bingo</title>
+        <title>Trope Bingo</title>
         <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div
@@ -88,13 +88,13 @@ export default function Murvel() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <a href="http://tropes.bingo" className={styles.main_image_a}>
+        <a href="http://tropebingo.org" className={styles.main_image_a}>
           <div className={styles.project_image_div} id={styles.tropesbingo_div}>
             <Image
               className={styles.project_image}
               src={tropesImg4}
               id="topes_bingo"
-              alt="An image showing a 'Tropes Bingo' game board"
+              alt="An image showing a 'Trope Bingo' game board"
               variant="top"
               placeholder="blur"
               blurDataURL="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII="
@@ -109,9 +109,6 @@ export default function Murvel() {
             Features
           </span>
           <ul className={styles.list_lefty} id="features">
-            <li className={styles.list_item}>
-              best domain name = <a href="http://tropes.bingo">tropes.bingo</a>
-            </li>
             <li className={styles.list_item}>
               Look up work (i.e. a film, a book)
             </li>
@@ -174,7 +171,7 @@ export default function Murvel() {
             <strong>Made for Mobile devices</strong>
           </h4>
           <div className={styles.project_links}>
-            <a href="http://tropes.bingo">play</a>
+            <a href="http://tropebingo.org">play</a>
             <a href="https://github.com/isthisthereallife/tropes-bingo">
               source code
             </a>

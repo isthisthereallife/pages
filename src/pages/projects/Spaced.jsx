@@ -1,26 +1,22 @@
 import styles from "../../styles/project.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import imgGilfoyle from "../../../public/images/gilfoyle.png";
-import imgBootstrap from "../../../public/images/bootstrap.png";
-import imgHtml5 from "../../../public/images/html5.png";
-import imgJava from "../../../public/images/java.png";
-import imgMysql from "../../../public/images/mysql.png";
-import imgSpring from "../../../public/images/spring.png";
-import imgVue from "../../../public/images/vuejs2.png";
+import imgSpaced from "../../../public/images/spaced.png";
+import imgPixiJS from "../../../public/images/pixijs-logo.png";
+import imgJS from "../../../public/images/javascript.png";
 import { CREEP_EVENTS } from "../../reducers/creepReducer";
 import useCreep from "../../lib/hooks/useCreep";
 import { useEffect, useRef } from "react";
 import Head from "next/head";
 
-export default function GilfoyleGo() {
+export default function Spaced() {
   const creep = useCreep();
   useEffect(() => {
     if (creep.creep.currentIndex !== 15) {
       creep.creepDispatch({
         payload: {
           currentIndex: 15,
-          currentPage: "Gilfoyle Go",
+          currentPage: "Spaced",
           currentPageType: "project",
         },
         type: CREEP_EVENTS.UPDATE,
@@ -46,7 +42,7 @@ export default function GilfoyleGo() {
     const isRightSwipe = dist < -threshold;
 
     if (isLeftSwipe) {
-      router.push("/projects/Audioplayer");
+      router.push("/projects/SVTpk");
     } else if (isRightSwipe) {
       router.push("/projects/Pokertimer");
     }
@@ -55,7 +51,7 @@ export default function GilfoyleGo() {
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Audioplayer");
+        router.push("/projects/SVTpk");
       } else if (e.code === "ArrowLeft") {
         router.push("/projects/Pokertimer");
       }
@@ -74,7 +70,7 @@ export default function GilfoyleGo() {
   return (
     <>
       <Head>
-        <title>Gilfoyle Go - Spring Boot, Vue, MySQL</title>
+        <title>Spaced</title>
         <link rel="icon" href="/pages/favicon.ico" />
       </Head>
       <div
@@ -83,49 +79,54 @@ export default function GilfoyleGo() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <div
-          className={styles.project_image_div}
-          width="600"
-          height="400"
-          id={styles.gilfoylego_div}
-        >
-          <Image className={styles.project_image} src={imgGilfoyle} />
-        </div>
-        <div className={styles.infoText} id={styles.gilfoyleInfo}>
-          <h4>Mock hotel booking app.</h4>
+        <a href="https://dafali.itch.io/spaced">
+          <div
+            className={styles.project_image_div}
+            width="600"
+            height="400"
+            id={styles.spaced_div}
+          >
+            <Image className={styles.project_image} src={imgSpaced} />
+          </div>
+        </a>
+        <div className={styles.infoText} id={styles.spacedInfo}>
+          <h4>A game about being lost in space</h4>
           <span id={styles.features_pill} onClick={showFeatures}>
-            Features
+            About
           </span>
           <ul className={styles.list_lefty} id="features">
-            <li className={styles.list_item}>Spring Backend</li>
-            <li className={styles.list_item}>Vue Frontend</li>
-            <li className={styles.list_item}>MySQL Database</li>
+            <li className={styles.list_item}>Made in 10 days for <a href="https://itch.io/jam/gbjam-11">GBJam 11</a></li>
+            <li className={styles.list_item}>Exciting gameplay</li>
+            <li className={styles.list_item}>Pretty sprites</li>
+            <li className={styles.list_item}>Adaptive music</li>
+            <li className={styles.list_item}>Ranked 50 out of 401 games</li>
           </ul>
           <br />
-          <div>
-            <a href="https://www.java.com">
-              <Image src={imgJava} alt="Java" height="40" width="40" />
-            </a>
-            <a href="https://spring.io/">
-              <Image src={imgSpring} height="40" width="40" />
-            </a>
-            <a href="https://vuejs.org/">
-              <Image src={imgVue} height="40" width="40" />
-            </a>
-            <a href="https://getbootstrap.com/">
-              <Image src={imgBootstrap} height="40" width="40" />
-            </a>
-            <a href="https://www.mysql.com/">
-              <Image src={imgMysql} height="40" width="40" />
-            </a>
-            <a href="https://www.w3schools.com/html/">
-              <Image src={imgHtml5} height="40" width="40" />
+          <div><a href="https://www.javascript.com">
+            <Image
+              className={styles.inlineLogo}
+              src={imgJS}
+              height="40px"
+              width="40px"
+              alt="JavaScript logo"
+            />
+          </a>
+            {"  "}
+            <a href="https://pixijs.com">
+              <Image
+                className={styles.inlineLogo}
+                src={imgPixiJS}
+                height="40px"
+                width="40px"
+                alt="PixiJS logo"
+              />
             </a>
           </div>
 
           <br />
           <div className={styles.project_links}>
-            <a href="https://github.com/isthisthereallife/Hotel-Booking-App">
+            <a href="https://dafali.itch.io/spaced">play</a>
+            <a href="https://github.com/isthisthereallife/Spaced">
               source code
             </a>
           </div>

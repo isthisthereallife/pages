@@ -57,7 +57,7 @@ export default function Projects() {
               >
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    <strong>Tropes Bingo</strong>
+                    <strong>Trope Bingo</strong>
                     <br />
                     <br />
                     <i>Mobile game</i>
@@ -109,26 +109,13 @@ export default function Projects() {
           </div>
 
           <div className={styles.item}>
-            <Link href="/projects/GilfoyleGo">
-              <button className={styles.itemButton} id={styles.btnGilf}>
+            <Link href="/projects/Spaced">
+              <button className={styles.itemButton} id={styles.btnSpaced}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    <strong>Hotel booking</strong> <br />
+                    <strong>Spaced</strong> <br />
                     <br />
-                    <i>Web App</i>
-                  </h4>
-                </div>
-              </button>
-            </Link>
-          </div>
-
-          <div className={styles.item}>
-            <Link href="/projects/Audioplayer">
-              <button className={styles.itemButton} id={styles.btnAudioplayer}>
-                <div className={styles.titleCard}>
-                  <h4 className={styles.title}>
-                    <strong>Audio player</strong> <br />
-                    <br /> <i>Built with jQuery</i>
+                    <i>Game Boy-esque game</i>
                   </h4>
                 </div>
               </button>

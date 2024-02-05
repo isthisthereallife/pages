@@ -41,7 +41,7 @@ export default function Pokertimer() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/GilfoyleGo");
+      router.push("/projects/Spaced");
     } else if (isRightSwipe) {
       router.push("/projects/Webshop");
     }
@@ -49,7 +49,7 @@ export default function Pokertimer() {
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/GilfoyleGo");
+        router.push("/projects/Spaced");
       } else if (e.code === "ArrowLeft") {
         router.push("/projects/Webshop");
       }

@@ -126,7 +126,8 @@
 .project_image_div#webshop_div {
   background-color: rgb(239, 199, 140, 0.85);
 }
-.project_image_div#gilfoylego_div {
+.project_image_div#spaced_div {
+  background-color: #213555;
   border: 1px solid black;
 }
 .project_image_div#pokertimer_div {
@@ -168,8 +169,8 @@
   text-shadow: rgb(255, 255, 255, 0.5) 6px 10px 8px;
 }
 
-#gilfoyleInfo {
-  background-color: rgb(255, 255, 255, 0.7);
+#spacedInfo {
+  background-color: rgb(255, 255, 255, 0.85);
   color: black;
   border: 1px solid black;
 }

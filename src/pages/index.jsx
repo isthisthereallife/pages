@@ -8,7 +8,7 @@ import { Button } from "@mui/material";
 import { FaHouseUser, FaLockOpen, FaLowVision } from "react-icons/fa";
 import useCreep from "../lib/hooks/useCreep";
 import imgSvtpk from "../../public/images/svtpk.png";
-import imgGilfoyle from "../../public/images/gilfoyle.png";
+import imgSpaced from "../../public/images/spaced.png";
 import Carousel from "react-bootstrap/Carousel";
 import imgPoker from "../../public/images/poker.png";
 import imgMurvel from "../../public/images/murvel2.png";
@@ -89,7 +89,7 @@ function HomePage() {
                   height="520"
                   src={imgTropesbingo}
                   variant="top"
-                  alt="Tropes Bingo"
+                  alt="Trope Bingo"
                 />
               </Link>
               <Carousel.Caption className={styles.carousel_caption}>
@@ -98,8 +98,8 @@ function HomePage() {
                   className={styles.carousel_link}
                 >
                   <div>
-                    <h5>Tropes Bingo</h5>
-                    <p>Does what it says on the tin</p>
+                    <h5>Trope Bingo</h5>
+                    <p>Can you spot the tropes?</p>
                   </div>
                 </Link>
               </Carousel.Caption>
@@ -147,12 +147,12 @@ function HomePage() {
 
             <Carousel.Item interval={2500}>
               <Link
-                href="/projects/GilfoyleGo"
+                href="/projects/Spaced"
                 className={styles.carousel_link}
               >
                 <Image
                   className={styles.carousel_image}
-                  src={imgGilfoyle}
+                  src={imgSpaced}
                   width="680"
                   height="520"
                   alt="Hotellbokningsapplikation"
@@ -160,12 +160,12 @@ function HomePage() {
               </Link>
               <Carousel.Caption className={styles.carousel_caption}>
                 <Link
-                  href="/projects/GilfoyleGo"
+                  href="/projects/Spaced"
                   className={styles.carousel_link}
                 >
                   <div>
-                    <h5>Gilfoyle Go</h5>
-                    <p>Spring Boot & Vue App</p>
+                    <h5>Spaced</h5>
+                    <p>Game Boy-esque game</p>
                   </div>
                 </Link>
               </Carousel.Caption>

@@ -22,7 +22,7 @@ export default function Footer() {
   switch (currentPageIndex) {
     case 10:
       left = (
-        <Link href="/projects/Audioplayer">
+        <Link href="/projects/Spaced">
           <FaArrowLeft className={styles.icon} alt="Arrow left" />
         </Link>
       );
@@ -75,7 +75,7 @@ export default function Footer() {
         </Link>
       );
       right = (
-        <Link href="/projects/GilfoyleGo">
+        <Link href="/projects/Spaced">
           <FaArrowRight className={styles.icon} />
         </Link>
       );
@@ -87,14 +87,14 @@ export default function Footer() {
         </Link>
       );
       right = (
-        <Link href="/projects/Audioplayer">
+        <Link href="/projects/SVTpk">
           <FaArrowRight className={styles.icon} />
         </Link>
       );
       break;
     case 16:
       left = (
-        <Link href="/projects/GilfoyleGo">
+        <Link href="/projects/Spaced">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );
