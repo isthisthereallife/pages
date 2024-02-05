@@ -6,8 +6,8 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  basePath: "/",
-  assetPrefix: "/",
+  basePath: "",
+  assetPrefix: "",
 }
 
 
