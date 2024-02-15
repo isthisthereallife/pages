@@ -99,7 +99,7 @@ export default function Spaced() {
             <li className={styles.list_item}>Exciting gameplay</li>
             <li className={styles.list_item}>Pretty sprites</li>
             <li className={styles.list_item}>Adaptive music</li>
-            <li className={styles.list_item}>Ranked 50 out of 401 games</li>
+            <li className={styles.list_item}>Ranked 50 out of 2870 participants</li>
           </ul>
           <br />
           <div><a href="https://www.javascript.com">
