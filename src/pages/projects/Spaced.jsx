@@ -79,7 +79,7 @@ export default function Spaced() {
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
-        <a href="https://dafali.itch.io/spaced">
+        <a href="https://isthisthereallife.itch.io/spaced-mobile">
           <div
             className={styles.project_image_div}
             width="600"
