@@ -125,7 +125,7 @@ export default function Spaced() {
 
           <br />
           <div className={styles.project_links}>
-            <a href="https://dafali.itch.io/spaced">play</a>
+            <a href="https://isthisthereallife.itch.io/spaced-mobile">play</a>
             <a href="https://github.com/isthisthereallife/Spaced">
               source code
             </a>

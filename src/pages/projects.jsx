@@ -3,9 +3,6 @@ import Link from "next/link";
 import { CREEP_EVENTS } from "../reducers/creepReducer";
 import useCreep from "../lib/hooks/useCreep";
 import { useEffect } from "react";
-import { Button } from "react-bootstrap";
-import Image from "next/image";
-import bgimg from "../../public/images/java.png";
 import Head from "next/head";
 
 export default function Projects() {

@@ -12,7 +12,6 @@ import imgSpaced from "../../public/images/spaced.png";
 import Carousel from "react-bootstrap/Carousel";
 import imgPoker from "../../public/images/poker.png";
 import imgMurvel from "../../public/images/murvel2.png";
-import imgWebshop from "../../public/images/webshop.png";
 import imgTropesbingo from "../../public/images/tropes1.png";
 
 import { CREEP_EVENTS } from "../reducers/creepReducer";
