@@ -41,4 +41,5 @@
   color: #efc78c;
   align-self: center;
   justify-content: flex-start;
+  cursor: pointer;
 }

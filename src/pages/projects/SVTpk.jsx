@@ -44,7 +44,7 @@ export default function SVTpk() {
     if (isLeftSwipe) {
       router.push("/projects/TropesBingo");
     } else if (isRightSwipe) {
-      router.push("/projects/Spaced");
+      router.push("/projects/Pokertimer");
     }
   };
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function SVTpk() {
       if (e.code === "ArrowRight") {
         router.push("/projects/TropesBingo");
       } else if (e.code === "ArrowLeft") {
-        router.push("/projects/Spaced");
+        router.push("/projects/Pokertimer");
       }
     };
     document.addEventListener("keydown", onKeyUp);

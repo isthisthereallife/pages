@@ -22,7 +22,7 @@ export default function Footer() {
   switch (currentPageIndex) {
     case 10:
       left = (
-        <Link href="/projects/Spaced">
+        <Link href="/projects/Pokertimer">
           <FaArrowLeft className={styles.icon} alt="Arrow left" />
         </Link>
       );
@@ -39,26 +39,26 @@ export default function Footer() {
         </Link>
       );
       right = (
-        <Link href="/projects/Murvel">
+        <Link href="/projects/Spaced">
           <FaArrowRight className={styles.icon} />
         </Link>
       );
       break;
-    case 12:
+    case 12: //murvel
       left = (
-        <Link href="/projects/TropesBingo">
+        <Link href="/projects/Spaced">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );
       right = (
-        <Link href="/projects/Webshop">
+        <Link href="/projects/Pokertimer">
           <FaArrowRight className={styles.icon} />
         </Link>
       );
       break;
     case 13:
       left = (
-        <Link href="/projects/Murvel">
+        <Link href="/projects/Spaced">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );
@@ -70,24 +70,24 @@ export default function Footer() {
       break;
     case 14:
       left = (
-        <Link href="/projects/Webshop">
-          <FaArrowLeft className={styles.icon} />
-        </Link>
-      );
-      right = (
-        <Link href="/projects/Spaced">
-          <FaArrowRight className={styles.icon} />
-        </Link>
-      );
-      break;
-    case 15:
-      left = (
-        <Link href="/projects/Pokertimer">
+        <Link href="/projects/Murvel">
           <FaArrowLeft className={styles.icon} />
         </Link>
       );
       right = (
         <Link href="/projects/SVTpk">
+          <FaArrowRight className={styles.icon} />
+        </Link>
+      );
+      break;
+    case 15: //spaced
+      left = (
+        <Link href="/projects/TropesBingo">
+          <FaArrowLeft className={styles.icon} />
+        </Link>
+      );
+      right = (
+        <Link href="/projects/Murvel">
           <FaArrowRight className={styles.icon} />
         </Link>
       );

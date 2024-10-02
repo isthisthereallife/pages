@@ -52,7 +52,7 @@ export default function Murvel() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/Murvel");
+      router.push("/projects/Spaced");
     } else if (isRightSwipe) {
       router.push("/projects/SVTpk");
     }
@@ -60,7 +60,7 @@ export default function Murvel() {
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Murvel");
+        router.push("/projects/Spaced");
       } else if (e.code === "ArrowLeft") {
         router.push("/projects/SVTpk");
       }

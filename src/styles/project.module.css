@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .carousel_main {
   display: flex;
   flex-direction: column;
@@ -12,9 +13,11 @@
   width: 80%;
   min-height: 90%;
 }
+
 .carousel_main div {
   align-items: center;
 }
+
 .bgImg {
   z-index: -1;
   opacity: 0.2;
@@ -22,6 +25,7 @@
   position: fixed;
   overflow: hidden;
 }
+
 .title {
   align-self: center;
   border-radius: 10px;
@@ -34,6 +38,7 @@
   display: flex;
   justify-content: center;
 }
+
 .project_image_div {
   display: flex;
   flex-direction: column;
@@ -54,9 +59,11 @@
   border-radius: 10px;
   object-fit: contain;
 }
+
 .container a span {
   visibility: hidden;
 }
+
 .inlineLogo {
   max-height: 25px;
   max-width: 25px;
@@ -72,11 +79,19 @@
   width: 280px;
   height: 60px;
 }
+
 .project_links a {
   color: #01438e;
   text-decoration: none;
   text-shadow: rgb(89, 118, 150) 1px 1px 0px;
 }
+
+.project_link_nope {
+  color: #c10000;
+  text-decoration: line-through;
+  text-shadow: rgb(89, 118, 150) 1px 1px 0px;
+}
+
 .playBtn {
   cursor: pointer;
   width: 40%;
@@ -107,6 +122,7 @@
 .list_lefty {
   align-items: flex-start;
 }
+
 .list_item {
   max-width: fit-content;
   text-align: left;
@@ -120,28 +136,32 @@
 .project_image_div#svtpk_div {
   border: 1px solid rgb(99, 99, 99);
 }
+
 .project_image_div#murvel_div {
   background-color: rgb(231, 0, 0, 0.85);
 }
+
 .project_image_div#webshop_div {
   background-color: rgb(239, 199, 140, 0.85);
 }
+
 .project_image_div#spaced_div {
   background-color: #213555;
   border: 1px solid black;
 }
+
 .project_image_div#pokertimer_div {
   background-color: rgb(44, 34, 14, 0.85);
 }
+
 .project_image_div#tropesbingo_div {
   border: 1px solid black;
 }
+
 .project_image_div#audioplayer_div {
-  background: linear-gradient(
-    to right,
-    rgb(218, 83, 35, 0.85),
-    rgb(243, 83, 35, 0.85)
-  );
+  background: linear-gradient(to right,
+      rgb(218, 83, 35, 0.85),
+      rgb(243, 83, 35, 0.85));
 }
 
 #features_pill {
@@ -155,9 +175,11 @@
 .infoText ul li {
   text-shadow: rgb(98, 98, 98, 0.8) 6px 10px 8px;
 }
+
 #svtpk_info {
   border: 1px solid rgb(99, 99, 99);
 }
+
 #murvelInfo {
   background-color: rgb(231, 0, 0, 0.85);
   color: white;
@@ -165,6 +187,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 #murvelInfo ul li {
   text-shadow: rgb(255, 255, 255, 0.5) 6px 10px 8px;
 }
@@ -174,20 +197,25 @@
   color: black;
   border: 1px solid black;
 }
+
 #webshop_info {
   background-color: rgb(239, 199, 140, 0.8);
   color: black;
 }
+
 #webshop_info ul li {
   text-shadow: rgb(99, 99, 99, 0.8) 6px 10px 8px;
 }
+
 #pokertimer_info {
   background-color: rgb(44, 34, 14, 0.85);
   color: white;
 }
+
 #pokertimer_info ul li {
   text-shadow: rgb(110, 110, 110) 6px 10px 8px;
 }
+
 #tropesbingo_info {
   background-color: rgb(255, 255, 255, 0.85);
   color: black;
@@ -199,9 +227,11 @@
 
   color: black;
 }
+
 #audioplayer_info ul li {
   text-shadow: rgb(255, 255, 255, 0.3) 8px 10px 8px;
 }
+
 /* Mobile --------------------------------------------------------------------------------*/
 @media (max-width: 699px) {
   .project_image_div {
@@ -210,18 +240,22 @@
     width: 96%;
     max-height: 60vh;
   }
+
   .project_image {
     max-width: 80%;
   }
+
   .infoText {
     padding: 0;
     width: 96%;
     max-width: 96%;
   }
+
   .project_links {
     max-width: 80%;
   }
 }
+
 @media (hover: none) {
   .infoText {
     margin-bottom: 50px;
@@ -231,6 +265,7 @@
 #tropesbingo_info {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 #tropesbingo_info ul li {
   font-style: italic;
 }

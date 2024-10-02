@@ -149,7 +149,7 @@ export default function Webshop() {
           </div>
           <div className={styles.project_links}>
             <br />
-            <a href="https://isthisthereallife.github.io/Webshop">try it out</a>
+            <span title="They shut down the API :(" className={styles.project_link_nope}>try it out</span>
             <br />
             <a href="https://github.com/isthisthereallife/Webshop">
               source code

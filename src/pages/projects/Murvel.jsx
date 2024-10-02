@@ -48,17 +48,17 @@ export default function Murvel() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/Webshop");
+      router.push("/projects/Pokertimer");
     } else if (isRightSwipe) {
-      router.push("/projects/TropesBingo");
+      router.push("/projects/Spaced");
     }
   };
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Webshop");
+        router.push("/projects/Pokertimer");
       } else if (e.code === "ArrowLeft") {
-        router.push("/projects/TropesBingo");
+        router.push("/projects/Spaced");
       }
     };
     document.addEventListener("keydown", onKeyUp);

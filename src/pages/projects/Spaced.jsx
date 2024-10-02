@@ -42,18 +42,18 @@ export default function Spaced() {
     const isRightSwipe = dist < -threshold;
 
     if (isLeftSwipe) {
-      router.push("/projects/SVTpk");
+      router.push("/projects/Murvel");
     } else if (isRightSwipe) {
-      router.push("/projects/Pokertimer");
+      router.push("/projects/TropesBingo");
     }
   };
 
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/SVTpk");
+        router.push("/projects/Murvel");
       } else if (e.code === "ArrowLeft") {
-        router.push("/projects/Pokertimer");
+        router.push("/projects/TropesBingo");
       }
     };
     document.addEventListener("keydown", onKeyUp);

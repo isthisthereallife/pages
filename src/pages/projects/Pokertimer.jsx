@@ -41,17 +41,17 @@ export default function Pokertimer() {
     const isLeftSwipe = dist > threshold;
     const isRightSwipe = dist < -threshold;
     if (isLeftSwipe) {
-      router.push("/projects/Spaced");
+      router.push("/projects/SVTpk");
     } else if (isRightSwipe) {
-      router.push("/projects/Webshop");
+      router.push("/projects/Murvel");
     }
   };
   useEffect(() => {
     const onKeyUp = (e) => {
       if (e.code === "ArrowRight") {
-        router.push("/projects/Spaced");
+        router.push("/projects/SVTpk");
       } else if (e.code === "ArrowLeft") {
-        router.push("/projects/Webshop");
+        router.push("/projects/Murvel");
       }
     };
     document.addEventListener("keydown", onKeyUp);

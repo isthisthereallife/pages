@@ -66,21 +66,19 @@ export default function Projects() {
               </button>
             </Link>
           </div>
-
           <div className={styles.item}>
-            <Link href="/projects/Webshop">
-              <button className={styles.itemButton} id={styles.btnWebshop}>
+            <Link href="/projects/Spaced">
+              <button className={styles.itemButton} id={styles.btnSpaced}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    <strong>Web shop</strong> <br />
+                    <strong>Spaced</strong> <br />
                     <br />
-                    <i>React/Next.js app</i>
+                    <i>Game Boy-esque game</i>
                   </h4>
                 </div>
               </button>
             </Link>
           </div>
-
           <div className={styles.item}>
             <Link href="/projects/Murvel">
               <button className={styles.itemButton} id={styles.btnMurvel}>
@@ -109,18 +107,20 @@ export default function Projects() {
           </div>
 
           <div className={styles.item}>
-            <Link href="/projects/Spaced">
-              <button className={styles.itemButton} id={styles.btnSpaced}>
+            <Link href="/projects/Webshop">
+              <button className={styles.itemButton} id={styles.btnWebshop}>
                 <div className={styles.titleCard}>
                   <h4 className={styles.title}>
-                    <strong>Spaced</strong> <br />
+                    <strong>Web shop</strong> <br />
                     <br />
-                    <i>Game Boy-esque game</i>
+                    <i>React/Next.js app</i>
                   </h4>
                 </div>
               </button>
             </Link>
           </div>
+
+
         </div>
 
         {/*

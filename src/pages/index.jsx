@@ -57,7 +57,7 @@ function HomePage() {
             activeIndex={index}
             onSelect={handleSelect}
           >
-            <Carousel.Item interval={3000}>
+            <Carousel.Item interval={4000}>
               <Link href="/projects/SVTpk" className={styles.carousel_link}>
                 <Image
                   className={styles.carousel_image}
@@ -78,7 +78,7 @@ function HomePage() {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item interval={3000}>
+            <Carousel.Item interval={4000}>
               <Link
                 href="/projects/TropesBingo"
                 className={styles.carousel_link}
@@ -105,47 +105,8 @@ function HomePage() {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item interval={2500}>
-              <Link href="/projects/Webshop" className={styles.carousel_link}>
-                <Image
-                  className={styles.carousel_image}
-                  src={imgWebshop}
-                  width="680"
-                  height="520"
-                  alt=""
-                />
-              </Link>
-              <Carousel.Caption className={styles.carousel_caption}>
-                <Link href="/projects/Webshop" className={styles.carousel_link}>
-                  <div>
-                    <h5>Web App</h5>
-                    <p>API-calls and dynamic page generation</p>
-                  </div>
-                </Link>
-              </Carousel.Caption>
-            </Carousel.Item>
 
-            <Carousel.Item interval={2500}>
-              <Link href="/projects/Murvel" className={styles.carousel_link}>
-                <Image
-                  className={styles.carousel_image}
-                  src={imgMurvel}
-                  width="680"
-                  height="520"
-                  alt="Murvel - Android-app"
-                />
-              </Link>
-              <Carousel.Caption className={styles.carousel_caption_red}>
-                <Link href="/projects/Murvel" className={styles.carousel_link}>
-                  <div>
-                    <h5>Android App</h5>
-                    <p>Browse the Marvel Universe</p>
-                  </div>
-                </Link>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item interval={2500}>
+            <Carousel.Item interval={4000}>
               <Link
                 href="/projects/Spaced"
                 className={styles.carousel_link}
@@ -170,7 +131,29 @@ function HomePage() {
                 </Link>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={2500}>
+
+            <Carousel.Item interval={4000}>
+              <Link href="/projects/Murvel" className={styles.carousel_link}>
+                <Image
+                  className={styles.carousel_image}
+                  src={imgMurvel}
+                  width="680"
+                  height="520"
+                  alt="Murvel - Android-app"
+                />
+              </Link>
+              <Carousel.Caption className={styles.carousel_caption_red}>
+                <Link href="/projects/Murvel" className={styles.carousel_link}>
+                  <div>
+                    <h5>Android App</h5>
+                    <p>Browse the Marvel Universe</p>
+                  </div>
+                </Link>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+
+            <Carousel.Item interval={4000}>
               <Link
                 href="/projects/Pokertimer"
                 className={styles.carousel_link}
